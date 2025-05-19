@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Algo-Bubble-Sort - Algorthamia</title>
+    <meta property="og:title" content="Algo-Bubble-Sort - Algorthamia" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+    <!--This is the head section-->
+    <!-- <style> ... </style> -->
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./algo-bubble-sort.css" rel="stylesheet" />
+
+      <div class="algo-bubble-sort-container">
+        <div class="algo-bubble-sort-container01">
+          <img
+            alt="image"
+            src="public/pycharm_logo-removebg-preview1-200w.png"
+            class="algo-bubble-sort-image"
+          />
+          <header data-thq="thq-navbar" class="algo-bubble-sort-navbar">
+            <span class="algo-bubble-sort-logo">Algorthamia</span>
+            <div
+              data-thq="thq-navbar-nav"
+              data-role="Nav"
+              class="algo-bubble-sort-desktop-menu"
+            >
+              <nav
+                data-thq="thq-navbar-nav-links"
+                data-role="Nav"
+                class="algo-bubble-sort-nav"
+              >
+                <a
+                  href="index.html"
+                  class="algo-bubble-sort-navlink button-clean button"
+                >
+                  Home
+                </a>
+                <a
+                  href="comparison.html"
+                  class="algo-bubble-sort-navlink1 button-clean button"
+                >
+                  Comparison
+                </a>
+                <a
+                  href="design-technique.html"
+                  class="algo-bubble-sort-navlink2 button-clean button"
+                >
+                  <span class="algo-bubble-sort-text">
+                    <span>Design</span>
+                    <br />
+                    <span>Technique</span>
+                  </span>
+                </a>
+                <a
+                  href="calculate.html"
+                  class="algo-bubble-sort-navlink3 button-clean button"
+                >
+                  Calculate
+                </a>
+                <div class="algo-bubble-sort-socials">
+                  <button class="social button">
+                    <img
+                      alt="image"
+                      src="public/Icons/twitter.svg"
+                      class="algo-bubble-sort-image1"
+                    />
+                  </button>
+                  <button class="social button">
+                    <img
+                      alt="image"
+                      src="public/Icons/discord.svg"
+                      class="algo-bubble-sort-image2"
+                    />
+                  </button>
+                </div>
+                <a
+                  href="log-in.html"
+                  class="algo-bubble-sort-navlink4 button-clean button"
+                >
+                  LogIn
+                </a>
+                <a
+                  href="sign-up.html"
+                  class="algo-bubble-sort-button button-clean button"
+                >
+                  sign Up
+                </a>
+              </nav>
+            </div>
+            <div
+              data-thq="thq-navbar-btn-group"
+              class="algo-bubble-sort-btn-group"
+            ></div>
+            <div
+              data-thq="thq-burger-menu"
+              class="algo-bubble-sort-burger-menu"
+            >
+              <button class="button algo-bubble-sort-button1">
+                <svg viewBox="0 0 1024 1024" class="algo-bubble-sort-icon">
+                  <path
+                    d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <div
+              data-thq="thq-mobile-menu"
+              class="algo-bubble-sort-mobile-menu"
+            >
+              <div
+                data-thq="thq-mobile-menu-nav"
+                data-role="Nav"
+                class="algo-bubble-sort-nav1"
+              >
+                <div class="algo-bubble-sort-container02">
+                  <span class="algo-bubble-sort-logo1">Character</span>
+                  <div
+                    data-thq="thq-close-menu"
+                    class="algo-bubble-sort-menu-close"
+                  >
+                    <svg
+                      viewBox="0 0 1024 1024"
+                      class="algo-bubble-sort-icon02"
+                    >
+                      <path
+                        d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <nav
+                  data-thq="thq-mobile-menu-nav-links"
+                  data-role="Nav"
+                  class="algo-bubble-sort-nav2"
+                >
+                  <span class="algo-bubble-sort-text004">About</span>
+                  <span class="algo-bubble-sort-text005">Features</span>
+                  <span class="algo-bubble-sort-text006">Pricing</span>
+                  <span class="algo-bubble-sort-text007">Team</span>
+                  <span class="algo-bubble-sort-text008">Blog</span>
+                </nav>
+                <div class="algo-bubble-sort-container03">
+                  <button class="algo-bubble-sort-login button">Login</button>
+                  <button class="button">Register</button>
+                </div>
+              </div>
+              <div class="algo-bubble-sort-icon-group">
+                <svg
+                  viewBox="0 0 950.8571428571428 1024"
+                  class="algo-bubble-sort-icon04"
+                >
+                  <path
+                    d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                  ></path></svg
+                ><svg
+                  viewBox="0 0 877.7142857142857 1024"
+                  class="algo-bubble-sort-icon06"
+                >
+                  <path
+                    d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                  ></path></svg
+                ><svg
+                  viewBox="0 0 602.2582857142856 1024"
+                  class="algo-bubble-sort-icon08"
+                >
+                  <path
+                    d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </header>
+        </div>
+        <section class="algo-bubble-sort-hero">
+          <div class="algo-bubble-sort-heading">
+            <h1 class="algo-bubble-sort-header">Bubble Sort</h1>
+          </div>
+        </section>
+        <section class="algo-bubble-sort-information">
+          <div class="algo-bubble-sort-container04"></div>
+          <div class="algo-bubble-sort-features">
+            <h2 id="information" class="algo-bubble-sort-text009">
+              information
+            </h2>
+            <ul class="algo-bubble-sort-ul list">
+              <li class="algo-bubble-sort-li list-item">
+                <span class="algo-bubble-sort-bold">Worst Case :&nbsp;</span>
+                <span class="algo-bubble-sort-text010">O(n^2)</span>
+                <span class="algo-bubble-sort-text011">
+                  - When the array is in reverse order, every element needs to
+                  be compared and potentially swapped.
+                </span>
+              </li>
+              <li class="algo-bubble-sort-li01 list-item">
+                <span class="algo-bubble-sort-bold1">Average Case :&nbsp;</span>
+                <span class="algo-bubble-sort-text012">O(n^2)</span>
+                <span class="algo-bubble-sort-text013">
+                  - It takes quadratic time even for partially sorted arrays.
+                </span>
+              </li>
+              <li class="algo-bubble-sort-li02 list-item">
+                <span class="algo-bubble-sort-bold2">Best Case :</span>
+                <span class="algo-bubble-sort-text014">O(n)</span>
+                <span class="algo-bubble-sort-text015">
+                  - When the array is already sorted, it only needs one pass to
+                  verify.
+                </span>
+              </li>
+              <li class="algo-bubble-sort-li03 list-item">
+                <span class="algo-bubble-sort-bold3">
+                  Design Technique :&nbsp;
+                </span>
+                <span class="algo-bubble-sort-text016">
+                  Incremental Technique
+                </span>
+              </li>
+              <li class="algo-bubble-sort-li04 list-item">
+                <span class="algo-bubble-sort-bold4">
+                  Space Complexity :&nbsp;
+                </span>
+                <span class="algo-bubble-sort-text017">
+                  <span>
+                    O(1)&nbsp; &nbsp; &nbsp;-&nbsp; &nbsp; &nbsp;(in place)
+                  </span>
+                  <br/>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="algo-bubble-sort-overview">
+          <div class="algo-bubble-sort-container05"></div>
+          <div class="algo-bubble-sort-features1">
+            <h2 id="Overview" class="algo-bubble-sort-text020">Overview</h2>
+            <span class="algo-bubble-sort-text021">
+              <span class="algo-bubble-sort-text022">Bubble Sort :</span>
+              <span>
+                is the simplest sorting algorithm that works by repeatedly
+                swapping the adjacent elements if they are in the wrong order.
+                This algorithm is not suitable for large data sets as its
+                average and worst-case time complexity is quite high.
+              </span>
+              <br />
+              <br />
+              <span></span>
+              <span class="algo-bubble-sort-text027">Definition :</span>
+              <span>
+                A simple sorting algorithm that repeatedly iterates through the
+                array, compares adjacent elements, and swaps them if they're in
+                the wrong order. This process continues until no more swaps are
+                needed, indicating the array is sorted.
+              </span>
+              <br />
+            </span>
+          </div>
+        </section>
+        <section class="algo-bubble-sort-steps">
+          <div class="algo-bubble-sort-container06"></div>
+          <div class="algo-bubble-sort-features2">
+            <h2 id="Steps" class="algo-bubble-sort-text030">Steps</h2>
+            <ol class="algo-bubble-sort-ul1 list">
+              <li class="algo-bubble-sort-li05 list-item">
+                <span>
+                  <span>Start at the beginning of the list</span>
+                  <br />
+                </span>
+                <ul class="algo-bubble-sort-ul2 list">
+                  <li class="algo-bubble-sort-li06 list-item">
+                    <span class="algo-bubble-sort-text034">
+                      <span>Compare each pair of adjacent elements.</span>
+                      <br />
+                    </span>
+                  </li>
+                  <li class="algo-bubble-sort-li07 list-item">
+                    <span>
+                      <span>
+                        If the elements are in the wrong order, swap them.
+                      </span>
+                      <br />
+                    </span>
+                  </li>
+                </ul>
+              </li>
+              <li class="algo-bubble-sort-li08 list-item">
+                <span>
+                  <span>Repeat step 1 until no more swaps occur:</span>
+                  <br />
+                </span>
+                <ul class="algo-bubble-sort-ul3 list">
+                  <li class="algo-bubble-sort-li09 list-item">
+                    <span class="algo-bubble-sort-text043">
+                      <span>This indicates the array is sorted.</span>
+                      <br class="algo-bubble-sort-text045" />
+                      <br />
+                    </span>
+                  </li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+        </section>
+        <section class="algo-bubble-sort-advantages">
+          <div class="algo-bubble-sort-container07"></div>
+          <div class="algo-bubble-sort-features3">
+            <h2 id="Advantages" class="algo-bubble-sort-text047">Advantages</h2>
+            <ol class="algo-bubble-sort-ul4 list">
+              <li class="algo-bubble-sort-li10 list-item">
+                <span>Bubble sort is easy to understand and implement.</span>
+              </li>
+              <li class="algo-bubble-sort-li11 list-item">
+                <span>It does not require any additional memory space.</span>
+              </li>
+              <li class="algo-bubble-sort-li12 list-item">
+                <span>
+                  <span>
+                    It is a stable sorting algorithm, meaning that elements with
+                    the same key value maintain their relative order in the
+                    sorted output.
+                  </span>
+                  <br />
+                </span>
+              </li>
+            </ol>
+          </div>
+        </section>
+        <section class="algo-bubble-sort-disadvantages">
+          <div class="algo-bubble-sort-container08"></div>
+          <div class="algo-bubble-sort-features4">
+            <h2 id="Disadvantages" class="algo-bubble-sort-text053">
+              Disadvantages
+            </h2>
+            <ol class="algo-bubble-sort-ul5 list">
+              <li class="algo-bubble-sort-li13 list-item">
+                <span>
+                  <span>
+                    Bubble sort has a time complexity of O(N2) which makes it
+                    very slow for large data sets.
+                  </span>
+                  <br />
+                </span>
+              </li>
+              <li class="algo-bubble-sort-li14 list-item">
+                <span>
+                  Bubble sort is a comparison-based sorting algorithm, which
+                  means that it requires a comparison operator to determine the
+                  relative order of elements in the input data set. It can limit
+                  the efficiency of the algorithm in certain cases.
+                </span>
+              </li>
+            </ol>
+          </div>
+        </section>
+        <section class="algo-bubble-sort-code">
+          <div class="algo-bubble-sort-container09"></div>
+          <div class="algo-bubble-sort-features5">
+            <h2 id="Pseudo Code" class="algo-bubble-sort-text058">
+              Pseudo Code
+            </h2>
+            <span class="algo-bubble-sort-code1">
+              <span>begin BubbleSort(list)</span>
+              <span>  for all elements of list</span>
+              <span>    if list[i] &gt; list[i+1]</span>
+              <span>      swap(list[i], list[i+1])</span>
+              <span>    end if</span>
+              <span>  end for</span>
+              <span>return list</span>
+              <span>end BubbleSort</span>
+            </span>
+          </div>
+        </section>
+        <section class="algo-bubble-sort-code2">
+          <div class="algo-bubble-sort-container10"></div>
+          <div class="algo-bubble-sort-features6">
+            <h2 id="Code in Java" class="algo-bubble-sort-text074">
+              Code in Java
+            </h2>
+            <span class="algo-bubble-sort-code3">
+              <span>public class BubbleSort {</span>
+              <span>   public static void bubbleSort(int[] arr) {</span>
+              <span>    int n = arr.length;</span>
+              <span>    for (int i = 0; i &lt; n - 1; i++) {</span>
+              <span>      for (int j = 0; j &lt; n - i - 1; j++) {</span>
+              <span>        if (arr[j] &gt; arr[j + 1]) {</span>
+              <span>          // Swap elements</span>
+              <span>          int temp = arr[j];</span>
+              <span>          arr[j] = arr[j + 1];</span>
+              <span>          arr[j + 1] = temp;</span>
+              <span>        }</span>
+              <span>      }</span>
+              <span>    }</span>
+              <span>  }</span>
+              <span>}</span>
+            </span>
+          </div>
+        </section>
+        <section class="algo-bubble-sort-code4">
+          <div class="algo-bubble-sort-container11"></div>
+          <div class="algo-bubble-sort-features7">
+            <h2 id="Code in Python" class="algo-bubble-sort-text105">
+              Code in Python
+            </h2>
+            <span class="algo-bubble-sort-code5">
+              <span>def bubble_sort(arr):</span>
+              <span>  n = len(arr)</span>
+              <span>  for i in range(n-1):</span>
+              <span>    for j in range(0, n-i-1):</span>
+              <span>      if arr[j] &gt; arr[j+1]:</span>
+              <span>      arr[j], arr[j+1] = arr[j+1], arr[j]</span>
+            </span>
+          </div>
+        </section>
+        <section class="algo-bubble-sort-example">
+          <div class="algo-bubble-sort-container12"></div>
+          <div class="algo-bubble-sort-features8">
+            <h2 id="Example" class="algo-bubble-sort-text117">Example</h2>
+            <span class="algo-bubble-sort-text118">
+              <span>1. Array Setup:</span>
+              <br class="algo-bubble-sort-text120" />
+              <br />
+              <br class="algo-bubble-sort-text122" />
+              <br />
+              <span>
+                Start with an unsorted array. Let's use [6, 2, 3, 1, 5] as our
+                example.
+              </span>
+              <br class="algo-bubble-sort-text125" />
+              <span>2. Iterations:</span>
+              <br class="algo-bubble-sort-text128" />
+              <br class="algo-bubble-sort-text130" />
+              <span>
+                Bubble sort works by repeatedly iterating through the array to
+                compare and swap elements.
+              </span>
+              <br class="algo-bubble-sort-text133" />
+              <span>
+                For an array with n elements, you'll need n-1 iterations to
+                ensure all elements are sorted.
+              </span>
+              <br class="algo-bubble-sort-text136" />
+              <span>3. First Iteration:</span>
+              <br class="algo-bubble-sort-text139" />
+              <br class="algo-bubble-sort-text141" />
+              <span>Compare the first two elements (6 and 2).</span>
+              <br class="algo-bubble-sort-text144" />
+              <span>Since 6 is greater than 2, swap them: [2, 6, 3, 1, 5]</span>
+              <br class="algo-bubble-sort-text147" />
+              <span>Continue comparing and swapping adjacent elements:</span>
+              <br class="algo-bubble-sort-text150" />
+              <span>
+                [2, 6, 3, 1, 5] -&gt; [2, 3, 6, 1, 5] -&gt; [2, 3, 1, 6, 5]
+                -&gt; [2, 3, 1, 5, 6]
+              </span>
+              <br class="algo-bubble-sort-text153" />
+              <span>
+                Now the largest element (6) has "bubbled" to its correct
+                position at the end.
+              </span>
+              <br class="algo-bubble-sort-text156" />
+              <span>4. Second Iteration:</span>
+              <br class="algo-bubble-sort-text159" />
+              <br class="algo-bubble-sort-text161" />
+              <span>
+                Repeat the process, but this time you can stop before reaching
+                the last element (which is already in its correct place):
+              </span>
+              <br class="algo-bubble-sort-text164" />
+              <span>
+                [2, 3, 1, 5, 6] -&gt; [2, 1, 3, 5, 6] -&gt; [1, 2, 3, 5, 6]
+              </span>
+              <br class="algo-bubble-sort-text167" />
+              <span>
+                Now the second largest element (5) is also in its correct
+                position.
+              </span>
+              <br class="algo-bubble-sort-text170" />
+              <span>5. Subsequent Iterations:</span>
+              <br class="algo-bubble-sort-text173" />
+              <br class="algo-bubble-sort-text175" />
+              <span>Continue iterations until no more swaps are needed:</span>
+              <br class="algo-bubble-sort-text178" />
+              <span>Third iteration: [1, 2, 3, 5, 6] (no swaps)</span>
+              <br class="algo-bubble-sort-text181" />
+              <span>The array is now sorted: [1, 2, 3, 5, 6]</span>
+            </span>
+          </div>
+        </section>
+        <footer class="algo-bubble-sort-footer">
+          <div class="algo-bubble-sort-main">
+            <div class="algo-bubble-sort-branding">
+              <div class="algo-bubble-sort-heading1">
+                <h2 class="algo-bubble-sort-logo2">Algorthamia</h2>
+                <p class="algo-bubble-sort-caption">
+                  Thank you for being on the website
+                </p>
+              </div>
+              <div class="algo-bubble-sort-socials1">
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="algo-bubble-sort-twitter1 social button"
+                >
+                  <img
+                    alt="image"
+                    src="public/Icons/twitter.svg"
+                    class="algo-bubble-sort-image3"
+                  />
+                </a>
+                <a
+                  href="https://discord.com"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="algo-bubble-sort-discord1 social button"
+                >
+                  <img
+                    alt="image"
+                    src="public/Icons/discord.svg"
+                    class="algo-bubble-sort-image4"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="algo-bubble-sort-links">
+              <div class="algo-bubble-sort-list">
+                <h3 class="algo-bubble-sort-heading2">Site</h3>
+                <div class="algo-bubble-sort-items">
+                  <a
+                    href="#information"
+                    class="algo-bubble-sort-link button-clean button"
+                  >
+                    information
+                  </a>
+                  <a
+                    href="#Overview"
+                    class="algo-bubble-sort-link01 button-clean button"
+                  >
+                    Overview
+                  </a>
+                  <a
+                    href="#Steps"
+                    class="algo-bubble-sort-link02 button-clean button"
+                  >
+                    Steps
+                  </a>
+                  <a
+                    href="#Advantages"
+                    class="algo-bubble-sort-link03 button-clean button"
+                  >
+                    Advantages
+                  </a>
+                  <a
+                    href="#Disadvantages"
+                    class="algo-bubble-sort-link04 button-clean button"
+                  >
+                    Disadvantages
+                  </a>
+                  <a
+                    href="#Pseudo Code"
+                    class="algo-bubble-sort-link05 button-clean button"
+                  >
+                    Pseudo Code
+                  </a>
+                  <a
+                    href="#Code in Java"
+                    class="algo-bubble-sort-link06 button-clean button"
+                  >
+                    Code
+                  </a>
+                  <a
+                    href="#Example"
+                    class="algo-bubble-sort-link07 button-clean button"
+                  >
+                    Example
+                  </a>
+                </div>
+              </div>
+              <div class="algo-bubble-sort-list1">
+                <a
+                  href="design-technique.html"
+                  class="algo-bubble-sort-navlink5"
+                >
+                  <h3 class="algo-bubble-sort-heading3">Algorthamia</h3>
+                </a>
+                <div class="algo-bubble-sort-items1">
+                  <a
+                    href="index.html"
+                    class="algo-bubble-sort-link08 button-clean button"
+                  >
+                    Home
+                  </a>
+                  <a
+                    href="comparison.html"
+                    class="algo-bubble-sort-link09 button-clean button"
+                  >
+                    Comparison
+                  </a>
+                  <a
+                    href="design-technique.html"
+                    class="algo-bubble-sort-link10 button-clean button"
+                  >
+                    Design Technique
+                  </a>
+                  <a
+                    href="calculate.html"
+                    class="algo-bubble-sort-link11 button-clean button"
+                  >
+                    Calcuate
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="algo-bubble-sort-socials2">
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="algo-bubble-sort-twitter2 social button"
+              >
+                <img
+                  alt="image"
+                  src="public/Icons/twitter.svg"
+                  class="algo-bubble-sort-image5"
+                />
+              </a>
+              <a
+                href="https://discord.com"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="algo-bubble-sort-discord2 social button"
+              >
+                <img
+                  alt="image"
+                  src="public/Icons/discord.svg"
+                  class="algo-bubble-sort-image6"
+                />
+              </a>
+            </div>
+          </div>
+          <span class="algo-bubble-sort-copyright">© 2023 .</span>
+        </footer>
+        <div>
+          <div class="algo-bubble-sort-container14">
+            <script>
+              /*
+               Accordion - Code Embed
+               */
+               const accordionContainers = document.querySelectorAll('[data-role='accordion-container']'); // All accordion containers
+               const accordionContents = document.querySelectorAll('[data-role='accordion-content']'); // All accordion content
+               const accordionIconsClosed = document.querySelectorAll('[data-role='accordion-icon-closed']'); // All accordion closed icons
+               const accordionIconsOpen = document.querySelectorAll('[data-role='accordion-icon-open']'); // All accordion open icons
+
+               accordionContents.forEach((accordionContent) => {
+                   accordionContent.style.display = 'none'; //Hides all accordion contents
+               });
+
+               accordionIconsClosed.forEach((icon) => {
+                 icon.style.display = 'flex'
+               })
+
+               accordionIconsOpen.forEach((icon) => {
+                 icon.style.display = 'none'
+               })
+
+               accordionContainers.forEach((accordionContainer, index) => {
+                   accordionContainer.addEventListener('click', () => {
+                       if (accordionContents[index].style.display === 'flex') {
+                           // If the accordion is already open, close it
+                           accordionContents[index].style.display = 'none';
+                           accordionIconsClosed[index].style.display = 'flex';
+                           accordionIconsOpen[index].style.display = 'none'
+                       } else {
+                           // If the accordion is closed, open it
+                           accordionContents.forEach((accordionContent) => {
+                               accordionContent.style.display = 'none'; //Hides all accordion contents
+                           });
+
+                           accordionIconsClosed.forEach((accordionIcon) => {
+                               accordionIcon.style.display = 'flex'; // Resets all icon transforms to 0deg (default)
+                           });
+
+                           accordionIconsOpen.forEach((accordionIcon) => {
+                             accordionIcon.style.display = 'none';
+                           })
+
+                           accordionContents[index].style.display = 'flex'; // Shows accordion content
+                           accordionIconsClosed[index].style.display = 'none'; // Rotates accordion icon 180deg
+                           accordionIconsOpen[index].style.display = 'flex';
+                       }
+                   });
+               });
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      data-section-id="navbar"
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+  </body>
+</html>

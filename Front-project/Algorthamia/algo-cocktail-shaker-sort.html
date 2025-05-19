@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Algo-Cocktail-Shaker-Sort - Algorthamia</title>
+    <meta
+      property="og:title"
+      content="Algo-Cocktail-Shaker-Sort - Algorthamia"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+    <!--This is the head section-->
+    <!-- <style> ... </style> -->
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./algo-cocktail-shaker-sort.css" rel="stylesheet" />
+
+      <div class="algo-cocktail-shaker-sort-container">
+        <div class="algo-cocktail-shaker-sort-container01">
+          <img
+            alt="image"
+            src="public/pycharm_logo-removebg-preview1-200w.png"
+            class="algo-cocktail-shaker-sort-image"
+          />
+          <header
+            data-thq="thq-navbar"
+            class="algo-cocktail-shaker-sort-navbar"
+          >
+            <span class="algo-cocktail-shaker-sort-logo">Algorthamia</span>
+            <div
+              data-thq="thq-navbar-nav"
+              data-role="Nav"
+              class="algo-cocktail-shaker-sort-desktop-menu"
+            >
+              <nav
+                data-thq="thq-navbar-nav-links"
+                data-role="Nav"
+                class="algo-cocktail-shaker-sort-nav"
+              >
+                <a
+                  href="index.html"
+                  class="algo-cocktail-shaker-sort-navlink button-clean button"
+                >
+                  Home
+                </a>
+                <a
+                  href="comparison.html"
+                  class="algo-cocktail-shaker-sort-navlink1 button-clean button"
+                >
+                  Comparison
+                </a>
+                <a
+                  href="design-technique.html"
+                  class="algo-cocktail-shaker-sort-navlink2 button-clean button"
+                >
+                  <span class="algo-cocktail-shaker-sort-text">
+                    <span>Design</span>
+                    <br />
+                    <span>Technique</span>
+                  </span>
+                </a>
+                <a
+                  href="calculate.html"
+                  class="algo-cocktail-shaker-sort-navlink3 button-clean button"
+                >
+                  Calculate
+                </a>
+                <div class="algo-cocktail-shaker-sort-socials">
+                  <button class="social button">
+                    <img
+                      alt="image"
+                      src="public/Icons/twitter.svg"
+                      class="algo-cocktail-shaker-sort-image1"
+                    />
+                  </button>
+                  <button class="social button">
+                    <img
+                      alt="image"
+                      src="public/Icons/discord.svg"
+                      class="algo-cocktail-shaker-sort-image2"
+                    />
+                  </button>
+                </div>
+                <a
+                  href="log-in.html"
+                  class="algo-cocktail-shaker-sort-navlink4 button-clean button"
+                >
+                  LogIn
+                </a>
+                <a
+                  href="sign-up.html"
+                  class="algo-cocktail-shaker-sort-button button-clean button"
+                >
+                  sign Up
+                </a>
+              </nav>
+            </div>
+            <div
+              data-thq="thq-navbar-btn-group"
+              class="algo-cocktail-shaker-sort-btn-group"
+            ></div>
+            <div
+              data-thq="thq-burger-menu"
+              class="algo-cocktail-shaker-sort-burger-menu"
+            >
+              <button class="button algo-cocktail-shaker-sort-button1">
+                <svg
+                  viewBox="0 0 1024 1024"
+                  class="algo-cocktail-shaker-sort-icon"
+                >
+                  <path
+                    d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <div
+              data-thq="thq-mobile-menu"
+              class="algo-cocktail-shaker-sort-mobile-menu"
+            >
+              <div
+                data-thq="thq-mobile-menu-nav"
+                data-role="Nav"
+                class="algo-cocktail-shaker-sort-nav1"
+              >
+                <div class="algo-cocktail-shaker-sort-container02">
+                  <span class="algo-cocktail-shaker-sort-logo1">Character</span>
+                  <div
+                    data-thq="thq-close-menu"
+                    class="algo-cocktail-shaker-sort-menu-close"
+                  >
+                    <svg
+                      viewBox="0 0 1024 1024"
+                      class="algo-cocktail-shaker-sort-icon02"
+                    >
+                      <path
+                        d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <nav
+                  data-thq="thq-mobile-menu-nav-links"
+                  data-role="Nav"
+                  class="algo-cocktail-shaker-sort-nav2"
+                >
+                  <span class="algo-cocktail-shaker-sort-text004">About</span>
+                  <span class="algo-cocktail-shaker-sort-text005">
+                    Features
+                  </span>
+                  <span class="algo-cocktail-shaker-sort-text006">Pricing</span>
+                  <span class="algo-cocktail-shaker-sort-text007">Team</span>
+                  <span class="algo-cocktail-shaker-sort-text008">Blog</span>
+                </nav>
+                <div class="algo-cocktail-shaker-sort-container03">
+                  <button class="algo-cocktail-shaker-sort-login button">
+                    Login
+                  </button>
+                  <button class="button">Register</button>
+                </div>
+              </div>
+              <div class="algo-cocktail-shaker-sort-icon-group">
+                <svg
+                  viewBox="0 0 950.8571428571428 1024"
+                  class="algo-cocktail-shaker-sort-icon04"
+                >
+                  <path
+                    d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                  ></path></svg
+                ><svg
+                  viewBox="0 0 877.7142857142857 1024"
+                  class="algo-cocktail-shaker-sort-icon06"
+                >
+                  <path
+                    d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                  ></path></svg
+                ><svg
+                  viewBox="0 0 602.2582857142856 1024"
+                  class="algo-cocktail-shaker-sort-icon08"
+                >
+                  <path
+                    d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </header>
+        </div>
+        <section class="algo-cocktail-shaker-sort-hero">
+          <div class="algo-cocktail-shaker-sort-heading">
+            <h1 class="algo-cocktail-shaker-sort-header">
+              Cocktail Shaker Sort
+            </h1>
+          </div>
+        </section>
+        <section class="algo-cocktail-shaker-sort-information">
+          <div class="algo-cocktail-shaker-sort-container04"></div>
+          <div class="algo-cocktail-shaker-sort-features">
+            <h2 id="information" class="algo-cocktail-shaker-sort-text009">
+              information
+            </h2>
+            <ul class="algo-cocktail-shaker-sort-ul list">
+              <li class="algo-cocktail-shaker-sort-li list-item">
+                <span class="algo-cocktail-shaker-sort-bold">
+                  Worst Case :&nbsp;
+                </span>
+                <span class="algo-cocktail-shaker-sort-text010">O(n^2)</span>
+              </li>
+              <li class="algo-cocktail-shaker-sort-li01 list-item">
+                <span class="algo-cocktail-shaker-sort-bold1">
+                  Average Case :&nbsp;
+                </span>
+                <span class="algo-cocktail-shaker-sort-text011">O(n^2)</span>
+              </li>
+              <li class="algo-cocktail-shaker-sort-li02 list-item">
+                <span class="algo-cocktail-shaker-sort-bold2">Best Case :</span>
+                <span class="algo-cocktail-shaker-sort-text012">O(n)</span>
+                <span class="algo-cocktail-shaker-sort-text013">
+                  - When the array is already sorted.
+                </span>
+              </li>
+              <li class="algo-cocktail-shaker-sort-li03 list-item">
+                <span class="algo-cocktail-shaker-sort-bold3">
+                  Design Technique :&nbsp;
+                </span>
+                <span class="algo-cocktail-shaker-sort-text014">
+                  Incremental Technique
+                </span>
+              </li>
+              <li class="algo-cocktail-shaker-sort-li04 list-item">
+                <span class="algo-cocktail-shaker-sort-bold4">
+                  Space Complexity :&nbsp;
+                </span>
+                <span class="algo-cocktail-shaker-sort-text015">
+                  <span>
+                    O(1)&nbsp; &nbsp; &nbsp;-&nbsp; &nbsp; &nbsp;(in place)
+                  </span>
+                  <br />
+                </span>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="algo-cocktail-shaker-sort-overview">
+          <div class="algo-cocktail-shaker-sort-container05"></div>
+          <div class="algo-cocktail-shaker-sort-features1">
+            <h2 id="Overview" class="algo-cocktail-shaker-sort-text018">
+              Overview
+            </h2>
+            <span class="algo-cocktail-shaker-sort-text019">
+              <span class="algo-cocktail-shaker-sort-text020">
+                Cocktail Sort :
+              </span>
+              <span>
+                is a variation of Bubble sort. The Bubble sort algorithm always
+                traverses elements from left and moves the largest element to
+                its correct position in the first iteration and second-largest
+                in the second iteration and so on. Cocktail Sort traverses
+                through a given array in both directions alternatively. Cocktail
+                sort does not go through the unnecessary iteration making it
+                efficient for large arrays.
+              </span>
+              <br />
+              <br />
+              <span></span>
+              <span class="algo-cocktail-shaker-sort-text025">
+                Definition :&nbsp;
+              </span>
+              <span>
+                A sorting algorithm that iterates through the array in both
+                directions, repeatedly comparing adjacent elements and swapping
+                them if they are in the wrong order. This bidirectional approach
+                can slightly improve performance over standard bubble sort in
+                certain cases.
+              </span>
+              <br />
+            </span>
+          </div>
+        </section>
+        <section class="algo-cocktail-shaker-sort-steps">
+          <div class="algo-cocktail-shaker-sort-container06"></div>
+          <div class="algo-cocktail-shaker-sort-features2">
+            <h2 id="Steps" class="algo-cocktail-shaker-sort-text028">Steps</h2>
+            <ol class="algo-cocktail-shaker-sort-ul1 list">
+              <li class="algo-cocktail-shaker-sort-li05 list-item">
+                <ul class="algo-cocktail-shaker-sort-ul2 list">
+                  <li class="algo-cocktail-shaker-sort-li06 list-item">
+                    <span class="algo-cocktail-shaker-sort-text029">
+                      <span>
+                        Compare adjacent elements and swap if necessary.
+                      </span>
+                      <br class="algo-cocktail-shaker-sort-text031" />
+                      <br />
+                    </span>
+                  </li>
+                </ul>
+                <span>
+                  <span>Iterate through the array from left to right:</span>
+                  <br />
+                </span>
+              </li>
+              <li class="algo-cocktail-shaker-sort-li07 list-item">
+                <span>
+                  <span>Iterate through the array from right to left:</span>
+                  <br />
+                </span>
+                <ul class="algo-cocktail-shaker-sort-ul3 list">
+                  <li class="algo-cocktail-shaker-sort-li08 list-item">
+                    <span class="algo-cocktail-shaker-sort-text039">
+                      <span>
+                        Compare adjacent elements and swap if necessary.
+                      </span>
+                      <br class="algo-cocktail-shaker-sort-text041" />
+                      <br />
+                    </span>
+                  </li>
+                </ul>
+              </li>
+              <li class="algo-cocktail-shaker-sort-li09 list-item">
+                <span>
+                  <span>Repeat steps 1-2 until no more swaps occur.</span>
+                  <br />
+                </span>
+              </li>
+            </ol>
+          </div>
+        </section>
+        <section class="algo-cocktail-shaker-sort-advantages">
+          <div class="algo-cocktail-shaker-sort-container07"></div>
+          <div class="algo-cocktail-shaker-sort-features3">
+            <h2 id="Advantages" class="algo-cocktail-shaker-sort-text046">
+              Advantages
+            </h2>
+            <ol class="algo-cocktail-shaker-sort-ul4 list">
+              <li class="algo-cocktail-shaker-sort-li10 list-item">
+                <span>Simple to understand and implement.</span>
+              </li>
+              <li class="algo-cocktail-shaker-sort-li11 list-item">
+                <span>In-place sorting, no extra memory required.</span>
+              </li>
+              <li class="algo-cocktail-shaker-sort-li12 list-item">
+                <span>
+                  <span>
+                    Can be slightly more efficient than bubble sort in certain
+                    cases.
+                  </span>
+                  <br />
+                </span>
+              </li>
+              <li class="algo-cocktail-shaker-sort-li13 list-item">
+                <span>
+                  <span>
+                    Stable sorting algorithm (preserves the order of equal
+                    elements).
+                  </span>
+                  <br />
+                </span>
+              </li>
+            </ol>
+          </div>
+        </section>
+        <section class="algo-cocktail-shaker-sort-disadvantages">
+          <div class="algo-cocktail-shaker-sort-container08"></div>
+          <div class="algo-cocktail-shaker-sort-features4">
+            <h2 id="Disadvantages" class="algo-cocktail-shaker-sort-text055">
+              Disadvantages
+            </h2>
+            <ol class="algo-cocktail-shaker-sort-ul5 list">
+              <li class="algo-cocktail-shaker-sort-li14 list-item">
+                <span>
+                  <span>
+                    Inefficient for large arrays due to its O(n^2) time
+                    complexity.
+                  </span>
+                  <br />
+                </span>
+              </li>
+              <li class="algo-cocktail-shaker-sort-li15 list-item">
+                <span>
+                  Not as efficient as more advanced sorting algorithms like
+                  quicksort or merge sort.
+                </span>
+              </li>
+            </ol>
+          </div>
+        </section>
+        <section class="algo-cocktail-shaker-sort-code">
+          <div class="algo-cocktail-shaker-sort-container09"></div>
+          <div class="algo-cocktail-shaker-sort-features5">
+            <h2 id="Pseudo Code" class="algo-cocktail-shaker-sort-text060">
+              Pseudo Code
+            </h2>
+            <span class="algo-cocktail-shaker-sort-code1">
+              <span>
+                procedure cocktailShakerSort(A : list of sortable items)
+              </span>
+              <br />
+              <span>swapped = true</span>
+              <br />
+              <span>while swapped do</span>
+              <br />
+              <span>swapped = false</span>
+              <br />
+              <span>for i = 0 to length(A) - 2 inclusive do</span>
+              <br />
+              <span>if A[i] &gt; A[i + 1] then</span>
+              <br />
+              <span>swap(A[i], A[i + 1])</span>
+              <br />
+              <span>swapped = true</span>
+              <br />
+              <span>end for</span>
+              <br />
+              <span>if not swapped then</span>
+              <br />
+              <span>break</span>
+              <br />
+              <span>end if</span>
+              <br />
+              <span>swapped = false</span>
+              <br />
+              <span>for i = length(A) - 2 downto 0 inclusive do</span>
+              <br />
+              <span>if A[i] &gt; A[i + 1] then</span>
+              <br />
+              <span>swap(A[i], A[i + 1])</span>
+              <br />
+              <span>swapped = true</span>
+              <br />
+              <span>end for</span>
+              <br />
+              <span>end while</span>
+              <br />
+              <span>end procedure</span>
+            </span>
+          </div>
+        </section>
+        <section class="algo-cocktail-shaker-sort-code2">
+          <div class="algo-cocktail-shaker-sort-container10"></div>
+          <div class="algo-cocktail-shaker-sort-features6">
+            <h2 id="Code in Java" class="algo-cocktail-shaker-sort-text100">
+              Code in Java
+            </h2>
+            <span class="algo-cocktail-shaker-sort-code3">
+              <span>public class CocktailShakerSort {</span>
+              <br />
+              <span>public static void cocktailShakerSort(int[] arr) {</span>
+              <br />
+              <span>boolean swapped;</span>
+              <br />
+              <span>do {</span>
+              <br />
+              <span>swapped = false;</span>
+              <br />
+              <span>for (int i = 0; i &lt; arr.length - 2; i++) {</span>
+              <br />
+              <span>if (arr[i] &gt; arr[i + 1]) {</span>
+              <br />
+              <span>swap(arr, i, i + 1);</span>
+              <br />
+              <span>swapped = true;</span>
+              <br />
+              <span>}</span>
+              <br />
+              <span>}</span>
+              <br />
+              <span>if (!swapped) {</span>
+              <br />
+              <span>break;</span>
+              <br />
+              <span>}</span>
+              <br />
+              <span>swapped = false;</span>
+              <br />
+              <span>for (int i = arr.length - 2; i &gt;= 0; i--) {</span>
+              <br />
+              <span>if (arr[i] &gt; arr[i + 1]) {</span>
+              <br />
+              <span>swap(arr, i, i + 1);</span>
+              <br />
+              <span>swapped = true;</span>
+              <br />
+              <span>}</span>
+              <br />
+              <span>}</span>
+              <br />
+              <span>} while (swapped);</span>
+              <br />
+              <span>}</span>
+              <br />
+              <br />
+              <span>private static void swap(int[] arr, int i, int j) {</span>
+              <br />
+              <span>int temp = arr[i];</span>
+              <br />
+              <span>arr[i] = arr[j];</span>
+              <br />
+              <span>arr[j] = temp;</span>
+              <br />
+              <span>}</span>
+              <br />
+              <span>}</span>
+            </span>
+          </div>
+        </section>
+        <section class="algo-cocktail-shaker-sort-code4">
+          <div class="algo-cocktail-shaker-sort-container11"></div>
+          <div class="algo-cocktail-shaker-sort-features7">
+            <h2 id="Code in Python" class="algo-cocktail-shaker-sort-text159">
+              Code in Python
+            </h2>
+            <span class="algo-cocktail-shaker-sort-code5">
+              <span>def cocktail_shaker_sort(arr):</span>
+              <br />
+              <span>swapped = True</span>
+              <br />
+              <br />
+              <span></span>
+              <br />
+              <span>while swapped:</span>
+              <br />
+              <span>swapped = False</span>
+              <br />
+              <span></span>
+              <span>for i in range(len(arr) - 1):</span>
+              <br />
+              <span>if arr[i] &gt; arr[i + 1]:</span>
+              <br />
+              <span>arr[i], arr[i + 1] = arr[i + 1], arr[i]</span>
+              <br />
+              <span>swapped = True</span>
+              <br />
+              <span>if not swapped:</span>
+              <br />
+              <span>break</span>
+              <br />
+              <span>swapped = False</span>
+              <br />
+              <span>for i in range(len(arr) - 2, -1, -1):</span>
+              <br />
+              <span>if arr[i] &gt; arr</span>
+            </span>
+          </div>
+        </section>
+        <section class="algo-cocktail-shaker-sort-example">
+          <div class="algo-cocktail-shaker-sort-container12"></div>
+          <div class="algo-cocktail-shaker-sort-features8">
+            <h2 id="Example" class="algo-cocktail-shaker-sort-text189">
+              Example
+            </h2>
+            <span class="algo-cocktail-shaker-sort-text190">
+              <br class="algo-cocktail-shaker-sort-text191" />
+              <br />
+              <span>
+                Here's a full example of Cocktail Shaker Sort step by step,
+                using the array [8, 5, 2, 9, 1]:
+              </span>
+              <br class="algo-cocktail-shaker-sort-text194" />
+              <br />
+              <br class="algo-cocktail-shaker-sort-text196" />
+              <br />
+              <span>1. First Iteration:</span>
+              <br class="algo-cocktail-shaker-sort-text199" />
+              <br />
+              <br class="algo-cocktail-shaker-sort-text201" />
+              <br />
+              <span>Left to right pass:</span>
+              <br class="algo-cocktail-shaker-sort-text204" />
+              <br />
+              <span>Compare 8 and 5, swap: [5, 8, 2, 9, 1]</span>
+              <br class="algo-cocktail-shaker-sort-text207" />
+              <br />
+              <span>Compare 8 and 2, swap: [5, 2, 8, 9, 1]</span>
+              <br class="algo-cocktail-shaker-sort-text210" />
+              <br />
+              <span>Compare 8 and 9, no swap: [5, 2, 8, 9, 1]</span>
+              <br class="algo-cocktail-shaker-sort-text213" />
+              <br />
+              <span>Right to left pass:</span>
+              <br class="algo-cocktail-shaker-sort-text216" />
+              <br />
+              <span>Compare 9 and 1, swap: [5, 2, 8, 1, 9]</span>
+              <br class="algo-cocktail-shaker-sort-text219" />
+              <br />
+              <span>Compare 8 and 1, swap: [5, 2, 1, 8, 9]</span>
+              <br class="algo-cocktail-shaker-sort-text222" />
+              <br />
+              <span>Compare 2 and 1, swap: [5, 1, 2, 8, 9]</span>
+              <br class="algo-cocktail-shaker-sort-text225" />
+              <br />
+              <span>2. Second Iteration:</span>
+              <br class="algo-cocktail-shaker-sort-text228" />
+              <br />
+              <br class="algo-cocktail-shaker-sort-text230" />
+              <br />
+              <span>Left to right pass:</span>
+              <br class="algo-cocktail-shaker-sort-text233" />
+              <br />
+              <span>Compare 5 and 1, swap: [1, 5, 2, 8, 9]</span>
+              <br class="algo-cocktail-shaker-sort-text236" />
+              <br />
+              <span>Compare 5 and 2, no swap: [1, 5, 2, 8, 9]</span>
+              <br class="algo-cocktail-shaker-sort-text239" />
+              <br />
+              <span>Right to left pass:</span>
+              <br class="algo-cocktail-shaker-sort-text242" />
+              <br />
+              <span>Compare 8 and 9, no swap: [1, 5, 2, 8, 9]</span>
+              <br class="algo-cocktail-shaker-sort-text245" />
+              <br />
+              <span>Compare 5 and 8, no swap: [1, 5, 2, 8, 9]</span>
+              <br class="algo-cocktail-shaker-sort-text248" />
+              <br />
+              <span>3. Third Iteration:</span>
+              <br class="algo-cocktail-shaker-sort-text251" />
+              <br />
+              <br class="algo-cocktail-shaker-sort-text253" />
+              <br />
+              <span>Left to right pass:</span>
+              <br class="algo-cocktail-shaker-sort-text256" />
+              <br />
+              <span>No swaps needed: [1, 5, 2, 8, 9]</span>
+              <br class="algo-cocktail-shaker-sort-text259" />
+              <br />
+              <span>Right to left pass:</span>
+              <br class="algo-cocktail-shaker-sort-text262" />
+              <br />
+              <span>No swaps needed: [1, 5, 2, 8, 9]</span>
+              <br class="algo-cocktail-shaker-sort-text265" />
+              <br />
+              <span>Array is now sorted: [1, 2, 5, 8, 9]</span>
+            </span>
+          </div>
+        </section>
+        <footer class="algo-cocktail-shaker-sort-footer">
+          <div class="algo-cocktail-shaker-sort-main">
+            <div class="algo-cocktail-shaker-sort-branding">
+              <div class="algo-cocktail-shaker-sort-heading1">
+                <h2 class="algo-cocktail-shaker-sort-logo2">Algorthamia</h2>
+                <p class="algo-cocktail-shaker-sort-caption">
+                  Thank you for being on the website
+                </p>
+              </div>
+              <div class="algo-cocktail-shaker-sort-socials1">
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="algo-cocktail-shaker-sort-twitter1 social button"
+                >
+                  <img
+                    alt="image"
+                    src="public/Icons/twitter.svg"
+                    class="algo-cocktail-shaker-sort-image3"
+                  />
+                </a>
+                <a
+                  href="https://discord.com"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="algo-cocktail-shaker-sort-discord1 social button"
+                >
+                  <img
+                    alt="image"
+                    src="public/Icons/discord.svg"
+                    class="algo-cocktail-shaker-sort-image4"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="algo-cocktail-shaker-sort-links">
+              <div class="algo-cocktail-shaker-sort-list">
+                <h3 class="algo-cocktail-shaker-sort-heading2">Site</h3>
+                <div class="algo-cocktail-shaker-sort-items">
+                  <a
+                    href="#information"
+                    class="algo-cocktail-shaker-sort-link button-clean button"
+                  >
+                    information
+                  </a>
+                  <a
+                    href="#Overview"
+                    class="algo-cocktail-shaker-sort-link01 button-clean button"
+                  >
+                    Overview
+                  </a>
+                  <a
+                    href="#Steps"
+                    class="algo-cocktail-shaker-sort-link02 button-clean button"
+                  >
+                    Steps
+                  </a>
+                  <a
+                    href="#Advantages"
+                    class="algo-cocktail-shaker-sort-link03 button-clean button"
+                  >
+                    Advantages
+                  </a>
+                  <a
+                    href="#Disadvantages"
+                    class="algo-cocktail-shaker-sort-link04 button-clean button"
+                  >
+                    Disadvantages
+                  </a>
+                  <a
+                    href="#Pseudo Code"
+                    class="algo-cocktail-shaker-sort-link05 button-clean button"
+                  >
+                    Pseudo Code
+                  </a>
+                  <a
+                    href="#Code in Java"
+                    class="algo-cocktail-shaker-sort-link06 button-clean button"
+                  >
+                    Code
+                  </a>
+                  <a
+                    href="#Example"
+                    class="algo-cocktail-shaker-sort-link07 button-clean button"
+                  >
+                    Example
+                  </a>
+                </div>
+              </div>
+              <div class="algo-cocktail-shaker-sort-list1">
+                <a
+                  href="design-technique.html"
+                  class="algo-cocktail-shaker-sort-navlink5"
+                >
+                  <h3 class="algo-cocktail-shaker-sort-heading3">
+                    Algorthamia
+                  </h3>
+                </a>
+                <div class="algo-cocktail-shaker-sort-items1">
+                  <a
+                    href="index.html"
+                    class="algo-cocktail-shaker-sort-link08 button-clean button"
+                  >
+                    Home
+                  </a>
+                  <a
+                    href="comparison.html"
+                    class="algo-cocktail-shaker-sort-link09 button-clean button"
+                  >
+                    Comparison
+                  </a>
+                  <a
+                    href="design-technique.html"
+                    class="algo-cocktail-shaker-sort-link10 button-clean button"
+                  >
+                    Design Technique
+                  </a>
+                  <a
+                    href="calculate.html"
+                    class="algo-cocktail-shaker-sort-link11 button-clean button"
+                  >
+                    Calcuate
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="algo-cocktail-shaker-sort-socials2">
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="algo-cocktail-shaker-sort-twitter2 social button"
+              >
+                <img
+                  alt="image"
+                  src="public/Icons/twitter.svg"
+                  class="algo-cocktail-shaker-sort-image5"
+                />
+              </a>
+              <a
+                href="https://discord.com"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="algo-cocktail-shaker-sort-discord2 social button"
+              >
+                <img
+                  alt="image"
+                  src="public/Icons/discord.svg"
+                  class="algo-cocktail-shaker-sort-image6"
+                />
+              </a>
+            </div>
+          </div>
+          <span class="algo-cocktail-shaker-sort-copyright">© 2023 .</span>
+        </footer>
+        <div>
+          <div class="algo-cocktail-shaker-sort-container14">
+            <script>
+              /*
+               Accordion - Code Embed
+               */
+               const accordionContainers = document.querySelectorAll('[data-role='accordion-container']'); // All accordion containers
+               const accordionContents = document.querySelectorAll('[data-role='accordion-content']'); // All accordion content
+               const accordionIconsClosed = document.querySelectorAll('[data-role='accordion-icon-closed']'); // All accordion closed icons
+               const accordionIconsOpen = document.querySelectorAll('[data-role='accordion-icon-open']'); // All accordion open icons
+
+               accordionContents.forEach((accordionContent) => {
+                   accordionContent.style.display = 'none'; //Hides all accordion contents
+               });
+
+               accordionIconsClosed.forEach((icon) => {
+                 icon.style.display = 'flex'
+               })
+
+               accordionIconsOpen.forEach((icon) => {
+                 icon.style.display = 'none'
+               })
+
+               accordionContainers.forEach((accordionContainer, index) => {
+                   accordionContainer.addEventListener('click', () => {
+                       if (accordionContents[index].style.display === 'flex') {
+                           // If the accordion is already open, close it
+                           accordionContents[index].style.display = 'none';
+                           accordionIconsClosed[index].style.display = 'flex';
+                           accordionIconsOpen[index].style.display = 'none'
+                       } else {
+                           // If the accordion is closed, open it
+                           accordionContents.forEach((accordionContent) => {
+                               accordionContent.style.display = 'none'; //Hides all accordion contents
+                           });
+
+                           accordionIconsClosed.forEach((accordionIcon) => {
+                               accordionIcon.style.display = 'flex'; // Resets all icon transforms to 0deg (default)
+                           });
+
+                           accordionIconsOpen.forEach((accordionIcon) => {
+                             accordionIcon.style.display = 'none';
+                           })
+
+                           accordionContents[index].style.display = 'flex'; // Shows accordion content
+                           accordionIconsClosed[index].style.display = 'none'; // Rotates accordion icon 180deg
+                           accordionIconsOpen[index].style.display = 'flex';
+                       }
+                   });
+               });
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      data-section-id="navbar"
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+  </body>
+</html>

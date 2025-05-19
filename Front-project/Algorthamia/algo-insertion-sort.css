@@ -1,0 +1,1471 @@
+.algo-insertion-sort-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  background-color: #27272D;
+}
+.algo-insertion-sort-container01 {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.algo-insertion-sort-image {
+  width: 125px;
+  height: 136px;
+  object-fit: cover;
+  padding-top: var(--dl-space-space-halfunit);
+}
+.algo-insertion-sort-navbar {
+  width: 970px;
+  display: flex;
+  position: relative;
+  max-width: 1440px;
+  align-items: center;
+  padding-top: var(--dl-space-space-threeunits);
+  padding-left: var(--dl-space-space-fiveunits);
+  padding-right: var(--dl-space-space-fiveunits);
+  padding-bottom: var(--dl-space-space-threeunits);
+  justify-content: space-between;
+}
+.algo-insertion-sort-logo {
+  color: rgb(255, 255, 255);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  margin-right: var(--dl-space-space-oneandhalfunits);
+}
+.algo-insertion-sort-desktop-menu {
+  display: flex;
+}
+.algo-insertion-sort-nav {
+  gap: var(--dl-space-space-twounits);
+  flex: 0 0 auto;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.algo-insertion-sort-navlink {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.algo-insertion-sort-navlink1 {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.algo-insertion-sort-navlink2 {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.algo-insertion-sort-text {
+  text-align: center;
+}
+.algo-insertion-sort-navlink3 {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.algo-insertion-sort-socials {
+  gap: var(--dl-space-space-unit);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.algo-insertion-sort-image1 {
+  width: 100px;
+  object-fit: cover;
+}
+.algo-insertion-sort-image2 {
+  width: 100px;
+  object-fit: cover;
+}
+.algo-insertion-sort-navlink4 {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.algo-insertion-sort-button {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.algo-insertion-sort-btn-group {
+  gap: var(--dl-space-space-fourunits);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.algo-insertion-sort-burger-menu {
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.algo-insertion-sort-icon {
+  width: var(--dl-size-size-space);
+  height: var(--dl-size-size-space);
+}
+.algo-insertion-sort-mobile-menu {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  padding: 32px;
+  z-index: 100;
+  position: fixed;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+}
+.algo-insertion-sort-nav1 {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.algo-insertion-sort-container02 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--dl-space-space-threeunits);
+  justify-content: space-between;
+}
+.algo-insertion-sort-logo1 {
+  color: rgb(255, 255, 255);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+}
+.algo-insertion-sort-menu-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.algo-insertion-sort-icon02 {
+  width: var(--dl-size-size-space);
+  height: var(--dl-size-size-space);
+}
+.algo-insertion-sort-nav2 {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.algo-insertion-sort-text004 {
+  margin-bottom: var(--dl-space-space-unit);
+}
+.algo-insertion-sort-text005 {
+  margin-bottom: var(--dl-space-space-unit);
+}
+.algo-insertion-sort-text006 {
+  margin-bottom: var(--dl-space-space-unit);
+}
+.algo-insertion-sort-text007 {
+  margin-bottom: var(--dl-space-space-unit);
+}
+.algo-insertion-sort-text008 {
+  margin-bottom: var(--dl-space-space-unit);
+}
+.algo-insertion-sort-container03 {
+  flex: 0 0 auto;
+  width: auto;
+  display: flex;
+  margin-top: var(--dl-space-space-unit);
+  align-items: center;
+  flex-direction: row;
+}
+.algo-insertion-sort-login {
+  margin-right: var(--dl-space-space-twounits);
+}
+.algo-insertion-sort-icon-group {
+  display: flex;
+}
+.algo-insertion-sort-icon04 {
+  width: var(--dl-size-size-space);
+  height: var(--dl-size-size-space);
+  margin-right: var(--dl-space-space-twounits);
+}
+.algo-insertion-sort-icon06 {
+  width: var(--dl-size-size-space);
+  height: var(--dl-size-size-space);
+  margin-right: var(--dl-space-space-twounits);
+}
+.algo-insertion-sort-icon08 {
+  width: var(--dl-size-size-space);
+  height: var(--dl-size-size-space);
+}
+.algo-insertion-sort-hero {
+  gap: var(--dl-space-space-fiveunits);
+  width: 100%;
+  display: flex;
+  max-width: 1440px;
+  align-items: center;
+  padding-top: var(--dl-space-space-fourunits);
+  padding-left: var(--dl-space-space-fiveunits);
+  padding-right: var(--dl-space-space-fiveunits);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-sixunits);
+}
+.algo-insertion-sort-heading {
+  gap: var(--dl-space-space-twounits);
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+}
+.algo-insertion-sort-header {
+  color: rgb(255, 255, 255);
+  font-size: 90px;
+  max-width: 900px;
+  align-self: center;
+  font-style: normal;
+  text-align: center;
+  font-weight: 500;
+  line-height: 108px;
+}
+.algo-insertion-sort-information {
+  gap: var(--dl-space-space-fiveunits);
+  width: 1024px;
+  display: flex;
+  max-width: 1440px;
+  margin-top: 5px;
+  align-items: flex-start;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  flex-direction: column;
+  padding-bottom: 59px;
+}
+.algo-insertion-sort-container04 {
+  flex: 0 0 auto;
+  width: 100%;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.algo-insertion-sort-features {
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-threeunits);
+  max-width: var(--dl-size-size-maxwidth);
+  flex-direction: column;
+}
+.algo-insertion-sort-text009 {
+  color: rgb(255, 207, 119);
+  font-size: 55px;
+  margin-bottom: var(--dl-space-space-threeunits);
+}
+.algo-insertion-sort-ul {
+  all: initial;
+  line-height: var(--dl-size-size-small);
+  white-space: initial;
+  list-style-type: disc;
+}
+.algo-insertion-sort-li {
+  font-size: 2px;
+  margin-top: var(--dl-space-space-unit);
+  line-height: 1;
+  margin-left: 00px;
+  margin-right: 00px;
+  margin-bottom: var(--dl-space-space-unit);
+}
+.algo-insertion-sort-bold {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  font-style: bold;
+  font-weight: bold;
+}
+.algo-insertion-sort-text010 {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  padding-right: var(--dl-space-space-oneandhalfunits);
+}
+.algo-insertion-sort-text011 {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  line-height: 1;
+}
+.algo-insertion-sort-li01 {
+  font-size: 2px;
+  margin-top: var(--dl-space-space-unit);
+  line-height: 1;
+  margin-left: 00px;
+  margin-right: 00px;
+  margin-bottom: var(--dl-space-space-unit);
+}
+.algo-insertion-sort-bold1 {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  font-style: bold;
+  font-weight: bold;
+}
+.algo-insertion-sort-text012 {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  padding-right: var(--dl-space-space-oneandhalfunits);
+}
+.algo-insertion-sort-text013 {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  line-height: 1;
+}
+.algo-insertion-sort-li02 {
+  font-size: 2px;
+  margin-top: var(--dl-space-space-unit);
+  line-height: 1;
+  margin-left: 00px;
+  margin-right: 00px;
+  margin-bottom: var(--dl-space-space-unit);
+}
+.algo-insertion-sort-bold2 {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  font-style: bold;
+  font-weight: bold;
+}
+.algo-insertion-sort-text014 {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  padding-right: var(--dl-space-space-oneandhalfunits);
+}
+.algo-insertion-sort-text015 {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  line-height: 1;
+}
+.algo-insertion-sort-li03 {
+  margin: 3px;
+  font-size: 2px;
+}
+.algo-insertion-sort-bold3 {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  font-style: bold;
+  font-weight: bold;
+}
+.algo-insertion-sort-text016 {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+}
+.algo-insertion-sort-li04 {
+  margin: 3px;
+  font-size: 2px;
+}
+.algo-insertion-sort-bold4 {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  font-style: bold;
+  font-weight: bold;
+}
+.algo-insertion-sort-text017 {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+}
+.algo-insertion-sort-overview {
+  gap: var(--dl-space-space-fiveunits);
+  width: 1024px;
+  display: flex;
+  max-width: 1440px;
+  margin-top: 5px;
+  align-items: flex-start;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  flex-direction: column;
+  padding-bottom: 59px;
+}
+.algo-insertion-sort-container05 {
+  flex: 0 0 auto;
+  width: 100%;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.algo-insertion-sort-features1 {
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-threeunits);
+  position: relative;
+  max-width: var(--dl-size-size-maxwidth);
+  flex-direction: column;
+}
+.algo-insertion-sort-text020 {
+  color: rgb(255, 207, 119);
+  font-size: 55px;
+  margin-bottom: var(--dl-space-space-threeunits);
+}
+.algo-insertion-sort-text021 {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  align-self: stretch;
+  text-align: justify;
+}
+.algo-insertion-sort-text022 {
+  text-transform: uppercase;
+}
+.algo-insertion-sort-text026 {
+  text-transform: uppercase;
+}
+.algo-insertion-sort-steps {
+  gap: var(--dl-space-space-fiveunits);
+  width: 1024px;
+  display: flex;
+  max-width: 1440px;
+  margin-top: 5px;
+  align-items: flex-start;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  flex-direction: column;
+  padding-bottom: 59px;
+}
+.algo-insertion-sort-container06 {
+  flex: 0 0 auto;
+  width: 100%;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.algo-insertion-sort-features2 {
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-threeunits);
+  position: relative;
+  max-width: var(--dl-size-size-maxwidth);
+  flex-direction: column;
+}
+.algo-insertion-sort-text029 {
+  color: rgb(255, 207, 119);
+  font-size: 55px;
+  margin-bottom: var(--dl-space-space-threeunits);
+}
+.algo-insertion-sort-ul1 {
+  flex: 1;
+  color: var(--dl-color-gray-white);
+  font-size: 30px;
+  line-height: var(--dl-size-size-small);
+}
+.algo-insertion-sort-li05 {
+  margin: 3px;
+}
+.algo-insertion-sort-ul2 {
+  flex: 1;
+  color: var(--dl-color-gray-white);
+  font-size: 30px;
+  line-height: var(--dl-size-size-small);
+  margin-left: var(--dl-space-space-oneandhalfunits);
+}
+.algo-insertion-sort-li06 {
+  margin: 3px;
+}
+.algo-insertion-sort-text033 {
+  line-height: 1;
+}
+.algo-insertion-sort-text035 {
+  line-height: 1;
+}
+.algo-insertion-sort-li07 {
+  margin: 3px;
+}
+.algo-insertion-sort-ul3 {
+  flex: 1;
+  color: var(--dl-color-gray-white);
+  font-size: 30px;
+  line-height: var(--dl-size-size-small);
+  margin-left: var(--dl-space-space-oneandhalfunits);
+}
+.algo-insertion-sort-li08 {
+  margin: 3px;
+}
+.algo-insertion-sort-text040 {
+  line-height: 1;
+}
+.algo-insertion-sort-li09 {
+  margin: 3px;
+}
+.algo-insertion-sort-li10 {
+  margin: 3px;
+}
+.algo-insertion-sort-advantages {
+  gap: var(--dl-space-space-fiveunits);
+  width: 1024px;
+  display: flex;
+  max-width: 1440px;
+  margin-top: 5px;
+  align-items: flex-start;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  flex-direction: column;
+  padding-bottom: 59px;
+}
+.algo-insertion-sort-container07 {
+  flex: 0 0 auto;
+  width: 100%;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.algo-insertion-sort-features3 {
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-threeunits);
+  position: relative;
+  max-width: var(--dl-size-size-maxwidth);
+  flex-direction: column;
+}
+.algo-insertion-sort-text049 {
+  color: rgb(255, 207, 119);
+  font-size: 55px;
+  margin-bottom: var(--dl-space-space-threeunits);
+}
+.algo-insertion-sort-ul4 {
+  flex: 1;
+  color: var(--dl-color-gray-white);
+  font-size: 30px;
+  line-height: var(--dl-size-size-small);
+}
+.algo-insertion-sort-li11 {
+  margin: 3px;
+}
+.algo-insertion-sort-li12 {
+  margin: 3px;
+}
+.algo-insertion-sort-li13 {
+  margin: 3px;
+}
+.algo-insertion-sort-li14 {
+  margin: 3px;
+}
+.algo-insertion-sort-li15 {
+  margin: 3px;
+}
+.algo-insertion-sort-li16 {
+  margin: 3px;
+}
+.algo-insertion-sort-li17 {
+  margin: 3px;
+}
+.algo-insertion-sort-li18 {
+  margin: 3px;
+}
+.algo-insertion-sort-disadvantages {
+  gap: var(--dl-space-space-fiveunits);
+  width: 1024px;
+  display: flex;
+  max-width: 1440px;
+  margin-top: 5px;
+  align-items: flex-start;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  flex-direction: column;
+  padding-bottom: 59px;
+}
+.algo-insertion-sort-container08 {
+  flex: 0 0 auto;
+  width: 100%;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.algo-insertion-sort-features4 {
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-threeunits);
+  position: relative;
+  max-width: var(--dl-size-size-maxwidth);
+  flex-direction: column;
+}
+.algo-insertion-sort-text070 {
+  color: rgb(255, 207, 119);
+  font-size: 55px;
+  margin-bottom: var(--dl-space-space-threeunits);
+}
+.algo-insertion-sort-ul5 {
+  flex: 1;
+  color: var(--dl-color-gray-white);
+  font-size: 30px;
+  line-height: var(--dl-size-size-small);
+}
+.algo-insertion-sort-li19 {
+  margin: 3px;
+}
+.algo-insertion-sort-li20 {
+  margin: 3px;
+}
+.algo-insertion-sort-code {
+  gap: var(--dl-space-space-fiveunits);
+  width: 1024px;
+  display: flex;
+  max-width: 1440px;
+  margin-top: 5px;
+  align-items: flex-start;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  flex-direction: column;
+  padding-bottom: 59px;
+}
+.algo-insertion-sort-container09 {
+  flex: 0 0 auto;
+  width: 100%;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.algo-insertion-sort-features5 {
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-threeunits);
+  position: relative;
+  max-width: var(--dl-size-size-maxwidth);
+  flex-direction: column;
+}
+.algo-insertion-sort-text075 {
+  color: rgb(255, 207, 119);
+  font-size: 55px;
+  margin-bottom: var(--dl-space-space-threeunits);
+}
+.algo-insertion-sort-code1 {
+  color: rgb(254, 107, 107);
+  border: 1px solid #C4C4C4;
+  padding: 1.25em 1.5em;
+  white-space: pre;
+  background-color: rgb(247, 249, 251);
+}
+.algo-insertion-sort-code2 {
+  gap: var(--dl-space-space-fiveunits);
+  width: 1024px;
+  display: flex;
+  max-width: 1440px;
+  margin-top: 5px;
+  align-items: flex-start;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  flex-direction: column;
+  padding-bottom: 59px;
+}
+.algo-insertion-sort-container10 {
+  flex: 0 0 auto;
+  width: 100%;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.algo-insertion-sort-features6 {
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-threeunits);
+  position: relative;
+  max-width: var(--dl-size-size-maxwidth);
+  flex-direction: column;
+}
+.algo-insertion-sort-text097 {
+  color: rgb(255, 207, 119);
+  font-size: 55px;
+  margin-bottom: var(--dl-space-space-threeunits);
+}
+.algo-insertion-sort-code3 {
+  color: rgb(254, 107, 107);
+  border: 1px solid #C4C4C4;
+  padding: 1.25em 1.5em;
+  white-space: pre;
+  background-color: rgb(247, 249, 251);
+}
+.algo-insertion-sort-text099 {
+  font-size: inherit;
+}
+.algo-insertion-sort-text102 {
+  font-size: inherit;
+}
+.algo-insertion-sort-code4 {
+  gap: var(--dl-space-space-fiveunits);
+  width: 1024px;
+  display: flex;
+  max-width: 1440px;
+  margin-top: 5px;
+  align-items: flex-start;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  flex-direction: column;
+  padding-bottom: 59px;
+}
+.algo-insertion-sort-container11 {
+  flex: 0 0 auto;
+  width: 100%;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.algo-insertion-sort-features7 {
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-threeunits);
+  position: relative;
+  max-width: var(--dl-size-size-maxwidth);
+  flex-direction: column;
+}
+.algo-insertion-sort-text133 {
+  color: rgb(255, 207, 119);
+  font-size: 55px;
+  margin-bottom: var(--dl-space-space-threeunits);
+}
+.algo-insertion-sort-code5 {
+  color: rgb(254, 107, 107);
+  border: 1px solid #C4C4C4;
+  padding: 1.25em 1.5em;
+  white-space: pre;
+  background-color: rgb(247, 249, 251);
+}
+.algo-insertion-sort-text135 {
+  font-size: inherit;
+}
+.algo-insertion-sort-example {
+  gap: var(--dl-space-space-fiveunits);
+  width: 1024px;
+  display: flex;
+  max-width: 1440px;
+  margin-top: 5px;
+  align-items: flex-start;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  flex-direction: column;
+  padding-bottom: 59px;
+}
+.algo-insertion-sort-container12 {
+  flex: 0 0 auto;
+  width: 100%;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.algo-insertion-sort-features8 {
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-threeunits);
+  position: relative;
+  max-width: var(--dl-size-size-maxwidth);
+  flex-direction: column;
+}
+.algo-insertion-sort-text159 {
+  color: rgb(255, 207, 119);
+  font-size: 55px;
+  margin-bottom: var(--dl-space-space-threeunits);
+}
+.algo-insertion-sort-text160 {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  align-self: stretch;
+  text-align: justify;
+}
+.algo-insertion-sort-text162 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-insertion-sort-text164 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-insertion-sort-text167 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-insertion-sort-text170 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-insertion-sort-text172 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-insertion-sort-text175 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-insertion-sort-text178 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-insertion-sort-text181 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-insertion-sort-text184 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-insertion-sort-text187 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-insertion-sort-text190 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-insertion-sort-text192 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-insertion-sort-text195 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-insertion-sort-text198 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-insertion-sort-text201 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-insertion-sort-text204 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-insertion-sort-text206 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-insertion-sort-text209 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-insertion-sort-text212 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-insertion-sort-text215 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-insertion-sort-text218 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-insertion-sort-text221 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-insertion-sort-text224 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-insertion-sort-text227 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-insertion-sort-text230 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-insertion-sort-text233 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-insertion-sort-text236 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-insertion-sort-text239 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-insertion-sort-text241 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-insertion-sort-text244 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-insertion-sort-text247 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-insertion-sort-text250 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-insertion-sort-text253 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-insertion-sort-text256 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-insertion-sort-text259 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-insertion-sort-text262 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-insertion-sort-text265 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-insertion-sort-text268 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-insertion-sort-text271 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-insertion-sort-text274 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-insertion-sort-text276 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-insertion-sort-footer {
+  gap: var(--dl-space-space-threeunits);
+  width: 100%;
+  display: flex;
+  position: relative;
+  max-width: 1440px;
+  align-items: flex-start;
+  padding-top: 120px;
+  padding-left: var(--dl-space-space-fiveunits);
+  padding-right: var(--dl-space-space-fiveunits);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-threeunits);
+}
+.algo-insertion-sort-main {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.algo-insertion-sort-branding {
+  gap: var(--dl-space-space-threeunits);
+  display: flex;
+  max-width: 600px;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.algo-insertion-sort-heading1 {
+  gap: var(--dl-space-space-threeunits);
+  width: 191px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.algo-insertion-sort-logo2 {
+  color: rgb(255, 255, 255);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+}
+.algo-insertion-sort-caption {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  align-self: center;
+  text-align: center;
+  line-height: 27px;
+}
+.algo-insertion-sort-socials1 {
+  gap: var(--dl-space-space-unit);
+  display: flex;
+  align-self: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.algo-insertion-sort-twitter1 {
+  text-decoration: none;
+}
+.algo-insertion-sort-image3 {
+  width: 100px;
+  object-fit: cover;
+}
+.algo-insertion-sort-discord1 {
+  text-decoration: none;
+}
+.algo-insertion-sort-image4 {
+  width: 100px;
+  object-fit: cover;
+}
+.algo-insertion-sort-links {
+  gap: 120px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.algo-insertion-sort-list {
+  gap: var(--dl-space-space-threeunits);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.algo-insertion-sort-heading2 {
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+}
+.algo-insertion-sort-items {
+  gap: var(--dl-space-space-oneandhalfunits);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.algo-insertion-sort-link {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.algo-insertion-sort-link01 {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.algo-insertion-sort-link02 {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.algo-insertion-sort-link03 {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.algo-insertion-sort-link04 {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.algo-insertion-sort-link05 {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.algo-insertion-sort-link06 {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.algo-insertion-sort-link07 {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.algo-insertion-sort-list1 {
+  gap: var(--dl-space-space-threeunits);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.algo-insertion-sort-navlink5 {
+  display: contents;
+}
+.algo-insertion-sort-heading3 {
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  text-decoration: none;
+}
+.algo-insertion-sort-items1 {
+  gap: var(--dl-space-space-oneandhalfunits);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.algo-insertion-sort-link08 {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.algo-insertion-sort-link09 {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.algo-insertion-sort-link10 {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.algo-insertion-sort-link11 {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.algo-insertion-sort-socials2 {
+  gap: var(--dl-space-space-unit);
+  display: none;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.algo-insertion-sort-twitter2 {
+  text-decoration: none;
+}
+.algo-insertion-sort-image5 {
+  width: 100px;
+  object-fit: cover;
+}
+.algo-insertion-sort-discord2 {
+  text-decoration: none;
+}
+.algo-insertion-sort-image6 {
+  width: 100px;
+  object-fit: cover;
+}
+.algo-insertion-sort-copyright {
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+}
+.algo-insertion-sort-container14 {
+  display: contents;
+}
+@media(max-width: 991px) {
+  .algo-insertion-sort-desktop-menu {
+    display: none;
+  }
+  .algo-insertion-sort-btn-group {
+    display: none;
+  }
+  .algo-insertion-sort-burger-menu {
+    display: flex;
+  }
+  .algo-insertion-sort-button1 {
+    display: flex;
+    padding: var(--dl-space-space-unit);
+    flex-direction: row;
+  }
+  .algo-insertion-sort-logo1 {
+    color: #000000;
+  }
+  .algo-insertion-sort-information {
+    width: 784px;
+    height: 2164px;
+    padding-left: 0px;
+  }
+  .algo-insertion-sort-container04 {
+    width: 265px;
+  }
+  .algo-insertion-sort-text009 {
+    align-self: center;
+  }
+  .algo-insertion-sort-overview {
+    width: 784px;
+    height: 2164px;
+    padding-left: 0px;
+  }
+  .algo-insertion-sort-container05 {
+    width: 265px;
+  }
+  .algo-insertion-sort-text020 {
+    align-self: center;
+  }
+  .algo-insertion-sort-steps {
+    width: 784px;
+    height: 2164px;
+    padding-left: 0px;
+  }
+  .algo-insertion-sort-container06 {
+    width: 265px;
+  }
+  .algo-insertion-sort-text029 {
+    align-self: center;
+  }
+  .algo-insertion-sort-advantages {
+    width: 784px;
+    height: 2164px;
+    padding-left: 0px;
+  }
+  .algo-insertion-sort-container07 {
+    width: 265px;
+  }
+  .algo-insertion-sort-text049 {
+    align-self: center;
+  }
+  .algo-insertion-sort-disadvantages {
+    width: 784px;
+    height: 2164px;
+    padding-left: 0px;
+  }
+  .algo-insertion-sort-container08 {
+    width: 265px;
+  }
+  .algo-insertion-sort-text070 {
+    align-self: center;
+  }
+  .algo-insertion-sort-code {
+    width: 784px;
+    height: 2164px;
+    padding-left: 0px;
+  }
+  .algo-insertion-sort-container09 {
+    width: 265px;
+  }
+  .algo-insertion-sort-text075 {
+    align-self: center;
+  }
+  .algo-insertion-sort-code2 {
+    width: 784px;
+    height: 2164px;
+    padding-left: 0px;
+  }
+  .algo-insertion-sort-container10 {
+    width: 265px;
+  }
+  .algo-insertion-sort-text097 {
+    align-self: center;
+  }
+  .algo-insertion-sort-code4 {
+    width: 784px;
+    height: 2164px;
+    padding-left: 0px;
+  }
+  .algo-insertion-sort-container11 {
+    width: 265px;
+  }
+  .algo-insertion-sort-text133 {
+    align-self: center;
+  }
+  .algo-insertion-sort-example {
+    width: 784px;
+    height: 2164px;
+    padding-left: 0px;
+  }
+  .algo-insertion-sort-container12 {
+    width: 265px;
+  }
+  .algo-insertion-sort-text159 {
+    align-self: center;
+  }
+}
+@media(max-width: 767px) {
+  .algo-insertion-sort-navbar {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+  .algo-insertion-sort-hero {
+    padding-top: var(--dl-space-space-threeunits);
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    padding-right: var(--dl-space-space-oneandhalfunits);
+    padding-bottom: var(--dl-space-space-twounits);
+  }
+  .algo-insertion-sort-heading {
+    gap: var(--dl-space-space-unit);
+  }
+  .algo-insertion-sort-header {
+    font-size: 36px;
+    max-width: 70%;
+    line-height: 43px;
+  }
+  .algo-insertion-sort-information {
+    gap: var(--dl-space-space-fourunits);
+    height: 1089px;
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    margin-bottom: 0px;
+    padding-right: var(--dl-space-space-oneandhalfunits);
+  }
+  .algo-insertion-sort-features {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+  .algo-insertion-sort-overview {
+    gap: var(--dl-space-space-fourunits);
+    height: 1089px;
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    margin-bottom: 0px;
+    padding-right: var(--dl-space-space-oneandhalfunits);
+  }
+  .algo-insertion-sort-features1 {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+  .algo-insertion-sort-steps {
+    gap: var(--dl-space-space-fourunits);
+    height: 1089px;
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    margin-bottom: 0px;
+    padding-right: var(--dl-space-space-oneandhalfunits);
+  }
+  .algo-insertion-sort-features2 {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+  .algo-insertion-sort-advantages {
+    gap: var(--dl-space-space-fourunits);
+    height: 1089px;
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    margin-bottom: 0px;
+    padding-right: var(--dl-space-space-oneandhalfunits);
+  }
+  .algo-insertion-sort-features3 {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+  .algo-insertion-sort-disadvantages {
+    gap: var(--dl-space-space-fourunits);
+    height: 1089px;
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    margin-bottom: 0px;
+    padding-right: var(--dl-space-space-oneandhalfunits);
+  }
+  .algo-insertion-sort-features4 {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+  .algo-insertion-sort-code {
+    gap: var(--dl-space-space-fourunits);
+    height: 1089px;
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    margin-bottom: 0px;
+    padding-right: var(--dl-space-space-oneandhalfunits);
+  }
+  .algo-insertion-sort-features5 {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+  .algo-insertion-sort-code2 {
+    gap: var(--dl-space-space-fourunits);
+    height: 1089px;
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    margin-bottom: 0px;
+    padding-right: var(--dl-space-space-oneandhalfunits);
+  }
+  .algo-insertion-sort-features6 {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+  .algo-insertion-sort-code4 {
+    gap: var(--dl-space-space-fourunits);
+    height: 1089px;
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    margin-bottom: 0px;
+    padding-right: var(--dl-space-space-oneandhalfunits);
+  }
+  .algo-insertion-sort-features7 {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+  .algo-insertion-sort-example {
+    gap: var(--dl-space-space-fourunits);
+    height: 1089px;
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    margin-bottom: 0px;
+    padding-right: var(--dl-space-space-oneandhalfunits);
+  }
+  .algo-insertion-sort-features8 {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+  .algo-insertion-sort-footer {
+    gap: var(--dl-space-space-oneandhalfunits);
+    padding-top: var(--dl-space-space-fourunits);
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    padding-right: var(--dl-space-space-oneandhalfunits);
+  }
+  .algo-insertion-sort-main {
+    gap: var(--dl-space-space-threeunits);
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .algo-insertion-sort-heading1 {
+    gap: var(--dl-space-space-unit);
+  }
+  .algo-insertion-sort-logo2 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .algo-insertion-sort-caption {
+    width: 80%;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .algo-insertion-sort-socials1 {
+    display: none;
+  }
+  .algo-insertion-sort-links {
+    gap: var(--dl-space-space-fourunits);
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .algo-insertion-sort-list {
+    gap: var(--dl-space-space-oneandhalfunits);
+  }
+  .algo-insertion-sort-list1 {
+    gap: var(--dl-space-space-oneandhalfunits);
+  }
+  .algo-insertion-sort-socials2 {
+    display: flex;
+  }
+}
+@media(max-width: 479px) {
+  .algo-insertion-sort-navbar {
+    padding: var(--dl-space-space-unit);
+  }
+  .algo-insertion-sort-mobile-menu {
+    padding: 16px;
+  }
+  .algo-insertion-sort-features {
+    padding-top: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-twounits);
+  }
+  .algo-insertion-sort-features1 {
+    padding-top: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-twounits);
+  }
+  .algo-insertion-sort-features2 {
+    padding-top: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-twounits);
+  }
+  .algo-insertion-sort-features3 {
+    padding-top: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-twounits);
+  }
+  .algo-insertion-sort-features4 {
+    padding-top: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-twounits);
+  }
+  .algo-insertion-sort-features5 {
+    padding-top: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-twounits);
+  }
+  .algo-insertion-sort-features6 {
+    padding-top: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-twounits);
+  }
+  .algo-insertion-sort-features7 {
+    padding-top: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-twounits);
+  }
+  .algo-insertion-sort-features8 {
+    padding-top: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-twounits);
+  }
+}

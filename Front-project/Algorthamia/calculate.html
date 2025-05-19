@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Calculate - Algorthamia</title>
+    <meta property="og:title" content="Calculate - Algorthamia" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+    <!--This is the head section-->
+    <!-- <style> ... </style> -->
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./calculate.css" rel="stylesheet" />
+
+      <div class="calculate-container">
+        <div class="calculate-container01">
+          <img
+            alt="image"
+            src="public/pycharm_logo-removebg-preview1-1500w.png"
+            class="calculate-image"
+          />
+          <header data-thq="thq-navbar" class="calculate-navbar">
+            <span class="calculate-logo">Algorthamia</span>
+            <div
+              data-thq="thq-navbar-nav"
+              data-role="Nav"
+              class="calculate-desktop-menu"
+            >
+              <nav
+                data-thq="thq-navbar-nav-links"
+                data-role="Nav"
+                class="calculate-nav"
+              >
+                <a
+                  href="index.html"
+                  class="calculate-navlink button-clean button"
+                >
+                  Home
+                </a>
+                <a
+                  href="comparison.html"
+                  class="calculate-navlink1 button-clean button"
+                >
+                  Comparison
+                </a>
+                <a
+                  href="design-technique.html"
+                  class="calculate-button button-clean button"
+                >
+                  <span>
+                    <span>Design</span>
+                    <br />
+                    <span>Technique</span>
+                  </span>
+                </a>
+                <a
+                  href="calculate.html"
+                  class="calculate-button1 button-clean button"
+                >
+                  Calculate
+                </a>
+                <div class="calculate-socials">
+                  <button class="social button">
+                    <img
+                      alt="image"
+                      src="public/Icons/twitter.svg"
+                      class="calculate-image1"
+                    />
+                  </button>
+                  <button class="social button">
+                    <img
+                      alt="image"
+                      src="public/Icons/discord.svg"
+                      class="calculate-image2"
+                    />
+                  </button>
+                </div>
+                <a
+                  href="log-in.html"
+                  class="calculate-navlink2 button-clean button"
+                >
+                  LogIn
+                </a>
+                <a
+                  href="sign-up.html"
+                  class="calculate-button2 button-clean button"
+                >
+                  sign Up
+                </a>
+              </nav>
+            </div>
+            <div
+              data-thq="thq-navbar-btn-group"
+              class="calculate-btn-group"
+            ></div>
+            <div data-thq="thq-burger-menu" class="calculate-burger-menu">
+              <button class="button calculate-button3">
+                <svg viewBox="0 0 1024 1024" class="calculate-icon">
+                  <path
+                    d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <div data-thq="thq-mobile-menu" class="calculate-mobile-menu">
+              <div
+                data-thq="thq-mobile-menu-nav"
+                data-role="Nav"
+                class="calculate-nav1"
+              >
+                <div class="calculate-container02">
+                  <span class="calculate-logo1">Character</span>
+                  <div data-thq="thq-close-menu" class="calculate-menu-close">
+                    <svg viewBox="0 0 1024 1024" class="calculate-icon02">
+                      <path
+                        d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <nav
+                  data-thq="thq-mobile-menu-nav-links"
+                  data-role="Nav"
+                  class="calculate-nav2"
+                >
+                  <span class="calculate-text04">About</span>
+                  <span class="calculate-text05">Features</span>
+                  <span class="calculate-text06">Pricing</span>
+                  <span class="calculate-text07">Team</span>
+                  <span class="calculate-text08">Blog</span>
+                </nav>
+                <div class="calculate-container03">
+                  <button class="calculate-login button">Login</button>
+                  <button class="button">Register</button>
+                </div>
+              </div>
+              <div class="calculate-icon-group">
+                <svg
+                  viewBox="0 0 950.8571428571428 1024"
+                  class="calculate-icon04"
+                >
+                  <path
+                    d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                  ></path></svg
+                ><svg
+                  viewBox="0 0 877.7142857142857 1024"
+                  class="calculate-icon06"
+                >
+                  <path
+                    d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                  ></path></svg
+                ><svg
+                  viewBox="0 0 602.2582857142856 1024"
+                  class="calculate-icon08"
+                >
+                  <path
+                    d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </header>
+        </div>
+        <section class="calculate-hero">
+          <div class="calculate-heading">
+            <h1 class="calculate-header">Calculate</h1>
+          </div>
+          <div class="calculate-buttons">
+            <button class="calculate-learn button-clean button">
+              Learn more
+            </button>
+          </div>
+        </section>
+        <p class="calculate-paragraph">The Algorithm</p>
+        <div class="calculate-container04"></div>
+        <section class="calculate-collection">
+          <label class="calculate-text09">
+            <span class="calculate-text10">
+              Enter Numbers (comma-separated) :&nbsp;&nbsp;
+            </span>
+            <br />
+          </label>
+          <input
+            type="text"
+            placeholder="5, 2, 8, 1, 3"
+            class="calculate-textinput input"
+          />
+          <label class="calculate-text12">Choose an Algorithm :&nbsp;</label>
+          <select class="calculate-select">
+            <option value="bubbleSort">Bubble Sort</option>
+            <option value="quickSort">Quick Sort</option>
+            <option value="mergeSort">Merge Sort</option>
+            <option value="insertionSort">Insertion Sort</option>
+            <option value="selectionSort">Selection Sort</option>
+            <option value="shellSort">Shell Sort</option>
+            <option value="heapSort">Heap Sort</option>
+            <option value="radixSort">Radix Sort</option>
+            <option value="cocktailSort">Cocktail Sort</option>
+            <option value="gnomeSort">Gnome Sort</option>
+            <option value="bogoSort">Bogo Sort</option>
+          </select>
+          <button type="button" class="calculate-button4 button" onclick="processInput()">Submit</button>
+          
+
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.3/lottie.min.js"></script>
+    <script>
+ function processInput() {
+            // Get the input value
+            const inputElement = document.getElementById('numberArray');
+            const inputString = inputElement.value;
+
+            // Validate the input array
+            const numbers = validateInput(inputString);
+
+            if (numbers) {
+                // Get the selected algorithm
+                const algorithmElement = document.getElementById('algorithm');
+                const selectedAlgorithm = algorithmElement.value;
+
+                // Perform the selected algorithm
+                const sortedArray = applySortingAlgorithm(selectedAlgorithm, numbers.slice()); // Pass a copy of the array to avoid modifying the original
+
+                // Display the result in the output div
+                const outputDiv = document.getElementById('outputDiv');
+                outputDiv.innerHTML = `<p>Sorted Array using ${selectedAlgorithm}:</p><p>${sortedArray.join(', ')}</p>`;
+                outputDiv.style.display = 'block';
+                const putDiv = document.getElementById('putDiv');
+                putDiv.style.display = 'block';
+                const warningDiv = document.getElementById('warningDiv');
+                warningDiv.style.display = 'none';
+                // Clear any previous warnings
+                document.getElementById('warningDiv').innerHTML = '';
+            } else {
+                // Display a warning for invalid input
+                document.getElementById('warningDiv').innerHTML = 'Invalid input. Please enter a valid array of numbers.';
+                const warningDiv = document.getElementById('warningDiv');
+                warningDiv.style.display = 'block';
+                // Hide the output div
+                const outputDiv = document.getElementById('outputDiv');
+                outputDiv.style.display = 'none';
+                const putDiv = document.getElementById('putDiv');
+                putDiv.style.display = 'none';
+            }
+        }
+        
+        function validateInput(inputString) {
+            const numbers = inputString.split(',').map(num => Number(num.trim()));
+
+            // Check if the array is non-empty and contains only numbers
+            if (Array.isArray(numbers) && numbers.length > 0 && numbers.every(num => !isNaN(num))) {
+                return numbers;
+            } else {
+                return null;
+            }
+        }
+        function applySortingAlgorithm(algorithm, arr) {
+            switch (algorithm) {
+                case 'bubbleSort':
+                    return measureExecutionTimeAndMemory(  bubbleSort, "putDiv",arr);
+                case 'quickSort':
+                    return  measureExecutionTimeAndMemory( quickSortarr, "putDiv", 0, arr.length - 1);
+                case 'mergeSort':
+                    return measureExecutionTimeAndMemory(  mergeSort, "putDiv",arr);
+                case 'insertionSort':
+                    return  measureExecutionTimeAndMemory( insertionSort, "putDiv",arr);
+                case 'selectionSort':
+                    return  measureExecutionTimeAndMemory( selectionSort, "putDiv",arr);
+                case 'shellSort':
+                    return  measureExecutionTimeAndMemory( shellSort, "putDiv",arr);
+                case 'heapSort':
+                    return measureExecutionTimeAndMemory(  heapSort, "putDiv",arr);
+                case 'radixSort':
+                    return  measureExecutionTimeAndMemory( radixSort, "putDiv",arr);
+                case 'cocktailSort':
+                    return  measureExecutionTimeAndMemory( cocktailSortarr, "putDiv",arr);
+                case 'gnomeSort':
+                    return  measureExecutionTimeAndMemory( gnomeSort, "putDiv",arr);
+                    case 'bogoSort':
+
+                    return  measureExecutionTimeAndMemory(bogoSort, "putDiv");
+                default:
+                    console.log('Invalid algorithm selection');
+            }
+        }
+
+           
+
+        const animationContainer = document.getElementById('lottie-animation');
+    const animationData = 'https://lottie.host/35ec2062-1871-4b71-87f8-191c42d05979/K32x2w8fvf.json'; // Replace with your Lottie animation URL
+
+    // Set up Lottie animation
+    const animation = lottie.loadAnimation({
+        container: animationContainer,
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: animationData,
+    });
+
+        // load
+        window.addEventListener('load', function() {
+            // Set a default array when the page loads
+            const defaultArray = [5, 2, 8, 1, 3];
+            document.getElementById('numberArray').value = defaultArray.join(', ');
+
+            // Trigger the sorting process with the default array
+            processInput();
+        });
+        // Sorting algorithms
+        
+        function bogoSort(arr) {
+            while (!isSorted(arr)) {
+                shuffle(arr);
+            }
+            return arr;
+        }
+
+        function isSorted(arr) {
+            for (let i = 0; i < arr.length - 1; i++) {
+                if (arr[i] > arr[i + 1]) {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        function shuffle(arr) {
+            for (let i = arr.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                // Swap arr[i] and arr[j]
+                [arr[i], arr[j]] = [arr[j], arr[i]];
+            }
+        }
+        function bubbleSort(arr) {
+          
+            const n = arr.length;
+    for (let i = 0; i < n - 1; i++) {
+        for (let j = 0; j < n - i - 1; j++) {
+            if (arr[j] > arr[j + 1]) {
+                // swap arr[j] and arr[j + 1]
+                const temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
+    return arr;
+        }
+
+        function quickSort(arr, low, high) {
+            if (low < high) {
+        const pi = partition(arr, low, high);
+        quickSort(arr, low, pi - 1);
+        quickSort(arr, pi + 1, high);
+    }
+    return arr;
+        }
+        function partition(arr, low, high) {
+    const pivot = arr[high];
+    let i = low - 1;
+    for (let j = low; j < high; j++) {
+        if (arr[j] < pivot) {
+            i++;
+            // swap arr[i] and arr[j]
+            const temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+        }
+    }
+    // swap arr[i + 1] and arr[high] (pivot)
+    const temp = arr[i + 1];
+    arr[i + 1] = arr[high];
+    arr[high] = temp;
+    return i + 1;
+}
+
+      function mergeSort(arr) {
+    if (arr.length <= 1) {
+        return arr;
+    }
+
+    const middle = Math.floor(arr.length / 2);
+    const left = arr.slice(0, middle);
+    const right = arr.slice(middle);
+
+    return merge(mergeSort(left), mergeSort(right));
+}
+
+function merge(left, right) {
+    let result = [];
+    let leftIndex = 0;
+    let rightIndex = 0;
+
+    while (leftIndex < left.length && rightIndex < right.length) {
+        if (left[leftIndex] < right[rightIndex]) {
+            result.push(left[leftIndex]);
+            leftIndex++;
+        } else {
+            result.push(right[rightIndex]);
+            rightIndex++;
+        }
+    }
+
+    return result.concat(left.slice(leftIndex)).concat(right.slice(rightIndex));
+}
+
+        function insertionSort(arr) {
+            const n = arr.length;
+    for (let i = 1; i < n; i++) {
+        const key = arr[i];
+        let j = i - 1;
+        while (j >= 0 && arr[j] > key) {
+            arr[j + 1] = arr[j];
+            j--;
+        }
+        arr[j + 1] = key;
+    }
+    return arr;
+        }
+
+        function selectionSort(arr) {
+            const n = arr.length;
+    for (let i = 0; i < n - 1; i++) {
+        let minIndex = i;
+        for (let j = i + 1; j < n; j++) {
+            if (arr[j] < arr[minIndex]) {
+                minIndex = j;
+            }
+        }
+        // swap arr[i] and arr[minIndex]
+        const temp = arr[i];
+        arr[i] = arr[minIndex];
+        arr[minIndex] = temp;
+    }
+    return arr
+        }
+
+        function shellSort(arr) {
+            const n = arr.length;
+    for (let gap = Math.floor(n / 2); gap > 0; gap = Math.floor(gap / 2)) {
+        for (let i = gap; i < n; i++) {
+            const temp = arr[i];
+            let j;
+            for (j = i; j >= gap && arr[j - gap] > temp; j -= gap) {
+                arr[j] = arr[j - gap];
+            }
+            arr[j] = temp;
+        }
+    }
+    return arr;
+        }
+
+        function heapSort(arr) {
+            const n = arr.length;
+
+    for (let i = Math.floor(n / 2) - 1; i >= 0; i--) {
+        heapify(arr, n, i);
+    }
+
+    for (let i = n - 1; i > 0; i--) {
+        // swap arr[0] and arr[i]
+        const temp = arr[0];
+        arr[0] = arr[i];
+        arr[i] = temp;
+
+        heapify(arr, i, 0);
+    }
+
+    return arr;
+        }
+
+        function heapify(arr, n, i) {
+    let largest = i;
+    const left = 2 * i + 1;
+    const right = 2 * i + 2;
+
+    if (left < n && arr[left] > arr[largest]) {
+        largest = left;
+    }
+
+    if (right < n && arr[right] > arr[largest]) {
+        largest = right;
+    }
+
+    if (largest !== i) {
+        // swap arr[i] and arr[largest]
+        const temp = arr[i];
+        arr[i] = arr[largest];
+        arr[largest] = temp;
+
+        heapify(arr, n, largest);
+    }
+}
+        function radixSort(arr) {
+            const getMax = () => {
+        let max = arr[0];
+        for (let i = 1; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+        return max;
+    };
+
+    const countSort = (exp) => {
+        const output = new Array(arr.length);
+        const count = new Array(10).fill(0);
+
+        for (let i = 0; i < arr.length; i++) {
+            count[Math.floor(arr[i] / exp) % 10]++;
+        }
+
+        for (let i = 1; i < 10; i++) {
+            count[i] += count[i - 1];
+        }
+
+        for (let i = arr.length - 1; i >= 0; i--) {
+            output[count[Math.floor(arr[i] / exp) % 10] - 1] = arr[i];
+            count[Math.floor(arr[i] / exp) % 10]--;
+        }
+
+        for (let i = 0; i < arr.length; i++) {
+            arr[i] = output[i];
+        }
+    };
+
+    const max = getMax();
+
+    for (let exp = 1; Math.floor(max / exp) > 0; exp *= 10) {
+        countSort(exp);
+    }
+
+    return arr;
+            return arr;
+        }
+
+       
+            function cocktailSort(arr) {
+    let swapped;
+    do {
+        swapped = false;
+        for (let i = 0; i < arr.length - 1; i++) {
+            if (arr[i] > arr[i + 1]) {
+                // Swap elements if they are in the wrong order
+                [arr[i], arr[i + 1]] = [arr[i + 1], arr[i]];
+                swapped = true;
+            }
+        }
+        if (!swapped) {
+            break; // If no two elements were swapped, the array is sorted
+        }
+        swapped = false;
+        for (let i = arr.length - 2; i >= 0; i--) {
+            if (arr[i] > arr[i + 1]) {
+                // Swap elements if they are in the wrong order
+                [arr[i], arr[i + 1]] = [arr[i + 1], arr[i]];
+                swapped = true;
+            }
+        }
+    } while (swapped);
+    return arr;
+        }
+
+        function gnomeSort(arr) {
+            let index = 0;
+    while (index < arr.length) {
+        if (index === 0 || arr[index] >= arr[index - 1]) {
+            // If current element is greater than or equal to the previous element
+            index++;
+        } else {
+            // Swap elements if they are in the wrong order
+            [arr[index], arr[index - 1]] = [arr[index - 1], arr[index]];
+            index--;
+        }
+    }
+    return arr;
+        } 
+        function measureExecutionTimeAndMemory(func, putDivId, ...args) {
+            const startTime = performance.now();
+            const startMemory = performance.memory ? performance.memory.usedJSHeapSize : 0;
+
+            const result = func(...args);
+
+            const endTime = performance.now();
+            const executionTime = endTime - startTime;
+
+            const endMemory = performance.memory ? performance.memory.usedJSHeapSize : 0;
+            const memoryUsage = (endMemory-startMemory); // Convert to megabytes
+
+            // Update the content of the specified div with the execution time and memory usage
+            const putDiv = document.getElementById(putDivId);
+            if (putDiv) {
+                putDiv.innerHTML = `Function ${func.name} took ${executionTime.toFixed(2)} milliseconds<br>
+                                        Memory Usage: ${memoryUsage.toFixed(2)} Mb`;
+            }
+
+            return result;
+        }
+
+        function exampleFunctionWithParameters() {
+            // Replace this with the code you want to measure
+            
+        }
+   
+</script>
+
+          <div class="calculate-container05">
+            <div class="calculate-container06"></div>
+            <div class="calculate-container07"></div>
+          </div>
+        </section>
+        <footer class="calculate-footer">
+          <div class="calculate-main">
+            <div class="calculate-branding">
+              <div class="calculate-heading1">
+                <h2 class="calculate-logo2">Algorthamia</h2>
+                <p class="calculate-caption">
+                  Thank you for being on the website
+                </p>
+              </div>
+              <div class="calculate-socials1">
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="calculate-twitter1 social button"
+                >
+                  <img
+                    alt="image"
+                    src="public/Icons/twitter.svg"
+                    class="calculate-image3"
+                  />
+                </a>
+                <a
+                  href="https://discord.com"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="calculate-discord1 social button"
+                >
+                  <img
+                    alt="image"
+                    src="public/Icons/discord.svg"
+                    class="calculate-image4"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="calculate-links">
+              <div class="calculate-list">
+                <a href="design-technique.html" class="calculate-navlink3">
+                  <h3 class="calculate-heading2">Algorthamia</h3>
+                </a>
+                <div class="calculate-items">
+                  <a
+                    href="index.html"
+                    class="calculate-link button-clean button"
+                  >
+                    Home
+                  </a>
+                  <a
+                    href="comparison.html"
+                    class="calculate-link1 button-clean button"
+                  >
+                    Comparison
+                  </a>
+                  <a
+                    href="design-technique.html"
+                    class="calculate-link2 button-clean button"
+                  >
+                    Types
+                  </a>
+                  <a
+                    href="calculate.html"
+                    class="calculate-link3 button-clean button"
+                  >
+                    Calcuate
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="calculate-socials2">
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="calculate-twitter2 social button"
+              >
+                <img
+                  alt="image"
+                  src="public/Icons/twitter.svg"
+                  class="calculate-image5"
+                />
+              </a>
+              <a
+                href="https://discord.com"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="calculate-discord2 social button"
+              >
+                <img
+                  alt="image"
+                  src="public/Icons/discord.svg"
+                  class="calculate-image6"
+                />
+              </a>
+            </div>
+          </div>
+          <span class="calculate-copyright">© 2023 .</span>
+        </footer>
+        <div>
+          <div class="calculate-container09">
+            <script>
+              /*
+               Accordion - Code Embed
+               */
+               const accordionContainers = document.querySelectorAll('[data-role='accordion-container']'); // All accordion containers
+               const accordionContents = document.querySelectorAll('[data-role='accordion-content']'); // All accordion content
+               const accordionIconsClosed = document.querySelectorAll('[data-role='accordion-icon-closed']'); // All accordion closed icons
+               const accordionIconsOpen = document.querySelectorAll('[data-role='accordion-icon-open']'); // All accordion open icons
+
+               accordionContents.forEach((accordionContent) => {
+                   accordionContent.style.display = 'none'; //Hides all accordion contents
+               });
+
+               accordionIconsClosed.forEach((icon) => {
+                 icon.style.display = 'flex'
+               })
+
+               accordionIconsOpen.forEach((icon) => {
+                 icon.style.display = 'none'
+               })
+
+               accordionContainers.forEach((accordionContainer, index) => {
+                   accordionContainer.addEventListener('click', () => {
+                       if (accordionContents[index].style.display === 'flex') {
+                           // If the accordion is already open, close it
+                           accordionContents[index].style.display = 'none';
+                           accordionIconsClosed[index].style.display = 'flex';
+                           accordionIconsOpen[index].style.display = 'none'
+                       } else {
+                           // If the accordion is closed, open it
+                           accordionContents.forEach((accordionContent) => {
+                               accordionContent.style.display = 'none'; //Hides all accordion contents
+                           });
+
+                           accordionIconsClosed.forEach((accordionIcon) => {
+                               accordionIcon.style.display = 'flex'; // Resets all icon transforms to 0deg (default)
+                           });
+
+                           accordionIconsOpen.forEach((accordionIcon) => {
+                             accordionIcon.style.display = 'none';
+                           })
+
+                           accordionContents[index].style.display = 'flex'; // Shows accordion content
+                           accordionIconsClosed[index].style.display = 'none'; // Rotates accordion icon 180deg
+                           accordionIconsOpen[index].style.display = 'flex';
+                       }
+                   });
+               });
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      data-section-id="navbar"
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+  </body>
+</html>

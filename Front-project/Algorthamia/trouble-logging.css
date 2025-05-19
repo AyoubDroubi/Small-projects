@@ -1,0 +1,373 @@
+.trouble-logging-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.trouble-logging-container1 {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  background-color: #27272D;
+}
+.trouble-logging-container2 {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.trouble-logging-image {
+  width: 152px;
+  height: 143px;
+  object-fit: cover;
+  padding-top: var(--dl-space-space-halfunit);
+}
+.trouble-logging-navbar {
+  width: 100%;
+  display: flex;
+  position: relative;
+  max-width: 1440px;
+  align-items: center;
+  padding-top: var(--dl-space-space-threeunits);
+  padding-left: var(--dl-space-space-fiveunits);
+  padding-right: var(--dl-space-space-fiveunits);
+  padding-bottom: var(--dl-space-space-threeunits);
+  justify-content: space-between;
+}
+.trouble-logging-logo {
+  color: rgb(255, 255, 255);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  margin-right: var(--dl-space-space-oneandhalfunits);
+}
+.trouble-logging-desktop-menu {
+  display: flex;
+}
+.trouble-logging-nav {
+  gap: var(--dl-space-space-twounits);
+  flex: 0 0 auto;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.trouble-logging-navlink {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.trouble-logging-navlink1 {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.trouble-logging-navlink2 {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.trouble-logging-text {
+  text-align: center;
+}
+.trouble-logging-navlink3 {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.trouble-logging-socials {
+  gap: var(--dl-space-space-unit);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.trouble-logging-image1 {
+  width: 100px;
+  object-fit: cover;
+}
+.trouble-logging-image2 {
+  width: 100px;
+  object-fit: cover;
+}
+.trouble-logging-navlink4 {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.trouble-logging-button {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.trouble-logging-btn-group {
+  gap: var(--dl-space-space-fourunits);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.trouble-logging-burger-menu {
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.trouble-logging-icon {
+  width: var(--dl-size-size-space);
+  height: var(--dl-size-size-space);
+}
+.trouble-logging-mobile-menu {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  padding: 32px;
+  z-index: 100;
+  position: fixed;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+}
+.trouble-logging-nav1 {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.trouble-logging-container3 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--dl-space-space-threeunits);
+  justify-content: space-between;
+}
+.trouble-logging-logo1 {
+  color: rgb(255, 255, 255);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+}
+.trouble-logging-menu-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.trouble-logging-icon02 {
+  width: var(--dl-size-size-space);
+  height: var(--dl-size-size-space);
+}
+.trouble-logging-nav2 {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.trouble-logging-text04 {
+  margin-bottom: var(--dl-space-space-unit);
+}
+.trouble-logging-text05 {
+  margin-bottom: var(--dl-space-space-unit);
+}
+.trouble-logging-text06 {
+  margin-bottom: var(--dl-space-space-unit);
+}
+.trouble-logging-text07 {
+  margin-bottom: var(--dl-space-space-unit);
+}
+.trouble-logging-text08 {
+  margin-bottom: var(--dl-space-space-unit);
+}
+.trouble-logging-container4 {
+  flex: 0 0 auto;
+  width: auto;
+  display: flex;
+  margin-top: var(--dl-space-space-unit);
+  align-items: center;
+  flex-direction: row;
+}
+.trouble-logging-login {
+  margin-right: var(--dl-space-space-twounits);
+}
+.trouble-logging-icon-group {
+  display: flex;
+}
+.trouble-logging-icon04 {
+  width: var(--dl-size-size-space);
+  height: var(--dl-size-size-space);
+  margin-right: var(--dl-space-space-twounits);
+}
+.trouble-logging-icon06 {
+  width: var(--dl-size-size-space);
+  height: var(--dl-size-size-space);
+  margin-right: var(--dl-space-space-twounits);
+}
+.trouble-logging-icon08 {
+  width: var(--dl-size-size-space);
+  height: var(--dl-size-size-space);
+}
+.trouble-logging-hero {
+  gap: var(--dl-space-space-fiveunits);
+  width: 100%;
+  display: flex;
+  max-width: 1440px;
+  align-items: center;
+  padding-top: var(--dl-space-space-fourunits);
+  padding-left: var(--dl-space-space-fiveunits);
+  padding-right: var(--dl-space-space-fiveunits);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-sixunits);
+}
+.trouble-logging-heading {
+  gap: var(--dl-space-space-twounits);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.trouble-logging-header {
+  color: rgb(255, 255, 255);
+  font-size: 90px;
+  max-width: 900px;
+  font-style: normal;
+  text-align: center;
+  font-weight: 500;
+  line-height: 108px;
+}
+.trouble-logging-text09 {
+  color: rgb(0, 0, 0);
+}
+.trouble-logging-text10 {
+  color: #ffffff;
+  font-size: 22px;
+  text-transform: capitalize;
+}
+.trouble-logging-text11 {
+  color: #ffffff;
+  font-size: 22px;
+}
+.trouble-logging-text12 {
+  color: #ffffff;
+  font-size: 22px;
+  text-transform: capitalize;
+}
+.trouble-logging-text13 {
+  color: #ffffff;
+  text-transform: capitalize;
+}
+.trouble-logging-text14 {
+  color: #ffffff;
+  text-transform: capitalize;
+}
+.trouble-logging-text15 {
+  color: #ffffff;
+  text-transform: capitalize;
+}
+.trouble-logging-text16 {
+  text-transform: uppercase;
+}
+.trouble-logging-information {
+  gap: var(--dl-space-space-fiveunits);
+  width: 1024px;
+  display: flex;
+  max-width: 1440px;
+  margin-top: 5px;
+  align-items: flex-start;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  flex-direction: column;
+  padding-bottom: 59px;
+}
+.trouble-logging-form {
+  width: 50%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.trouble-logging-text17 {
+  color: rgb(255, 255, 255);
+  font-size: larger;
+  align-self: flex-start;
+}
+.trouble-logging-text19 {
+  color: #ffffff;
+  font-size: larger;
+}
+.trouble-logging-textinput {
+  width: 100%;
+  align-self: flex-start;
+}
+.trouble-logging-text21 {
+  color: rgb(255, 255, 255);
+  font-size: larger;
+  align-self: flex-start;
+  margin-top: var(--dl-space-space-unit);
+  margin-bottom: var(--dl-space-space-unit);
+}
+.trouble-logging-button2 {
+  width: 515px;
+  height: 48px;
+  padding-top: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-unit);
+}
+@media(max-width: 991px) {
+  .trouble-logging-desktop-menu {
+    display: none;
+  }
+  .trouble-logging-btn-group {
+    display: none;
+  }
+  .trouble-logging-burger-menu {
+    display: flex;
+  }
+  .trouble-logging-button1 {
+    display: flex;
+    padding: var(--dl-space-space-unit);
+    flex-direction: row;
+  }
+  .trouble-logging-logo1 {
+    color: #000000;
+  }
+  .trouble-logging-information {
+    width: 784px;
+    height: 2164px;
+    padding-left: 0px;
+  }
+}
+@media(max-width: 767px) {
+  .trouble-logging-navbar {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+  .trouble-logging-hero {
+    padding-top: var(--dl-space-space-threeunits);
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    padding-right: var(--dl-space-space-oneandhalfunits);
+    padding-bottom: var(--dl-space-space-twounits);
+  }
+  .trouble-logging-heading {
+    gap: var(--dl-space-space-unit);
+  }
+  .trouble-logging-header {
+    font-size: 36px;
+    max-width: 70%;
+    line-height: 43px;
+  }
+  .trouble-logging-information {
+    gap: var(--dl-space-space-fourunits);
+    height: 1089px;
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    margin-bottom: 0px;
+    padding-right: var(--dl-space-space-oneandhalfunits);
+  }
+}
+@media(max-width: 479px) {
+  .trouble-logging-navbar {
+    padding: var(--dl-space-space-unit);
+  }
+  .trouble-logging-mobile-menu {
+    padding: 16px;
+  }
+}

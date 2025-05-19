@@ -1,0 +1,1372 @@
+.algo-bubble-sort-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  background-color: #27272D;
+}
+.algo-bubble-sort-container01 {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.algo-bubble-sort-image {
+  width: 125px;
+  height: 136px;
+  object-fit: cover;
+  padding-top: var(--dl-space-space-halfunit);
+}
+.algo-bubble-sort-navbar {
+  width: 970px;
+  display: flex;
+  position: relative;
+  max-width: 1440px;
+  align-items: center;
+  padding-top: var(--dl-space-space-threeunits);
+  padding-left: var(--dl-space-space-fiveunits);
+  padding-right: var(--dl-space-space-fiveunits);
+  padding-bottom: var(--dl-space-space-threeunits);
+  justify-content: space-between;
+}
+.algo-bubble-sort-logo {
+  color: rgb(255, 255, 255);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  margin-right: var(--dl-space-space-oneandhalfunits);
+}
+.algo-bubble-sort-desktop-menu {
+  display: flex;
+}
+.algo-bubble-sort-nav {
+  gap: var(--dl-space-space-twounits);
+  flex: 0 0 auto;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.algo-bubble-sort-navlink {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.algo-bubble-sort-navlink1 {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.algo-bubble-sort-navlink2 {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.algo-bubble-sort-text {
+  text-align: center;
+}
+.algo-bubble-sort-navlink3 {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.algo-bubble-sort-socials {
+  gap: var(--dl-space-space-unit);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.algo-bubble-sort-image1 {
+  width: 100px;
+  object-fit: cover;
+}
+.algo-bubble-sort-image2 {
+  width: 100px;
+  object-fit: cover;
+}
+.algo-bubble-sort-navlink4 {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.algo-bubble-sort-button {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.algo-bubble-sort-btn-group {
+  gap: var(--dl-space-space-fourunits);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.algo-bubble-sort-burger-menu {
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.algo-bubble-sort-icon {
+  width: var(--dl-size-size-space);
+  height: var(--dl-size-size-space);
+}
+.algo-bubble-sort-mobile-menu {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  padding: 32px;
+  z-index: 100;
+  position: fixed;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+}
+.algo-bubble-sort-nav1 {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.algo-bubble-sort-container02 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--dl-space-space-threeunits);
+  justify-content: space-between;
+}
+.algo-bubble-sort-logo1 {
+  color: rgb(255, 255, 255);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+}
+.algo-bubble-sort-menu-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.algo-bubble-sort-icon02 {
+  width: var(--dl-size-size-space);
+  height: var(--dl-size-size-space);
+}
+.algo-bubble-sort-nav2 {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.algo-bubble-sort-text004 {
+  margin-bottom: var(--dl-space-space-unit);
+}
+.algo-bubble-sort-text005 {
+  margin-bottom: var(--dl-space-space-unit);
+}
+.algo-bubble-sort-text006 {
+  margin-bottom: var(--dl-space-space-unit);
+}
+.algo-bubble-sort-text007 {
+  margin-bottom: var(--dl-space-space-unit);
+}
+.algo-bubble-sort-text008 {
+  margin-bottom: var(--dl-space-space-unit);
+}
+.algo-bubble-sort-container03 {
+  flex: 0 0 auto;
+  width: auto;
+  display: flex;
+  margin-top: var(--dl-space-space-unit);
+  align-items: center;
+  flex-direction: row;
+}
+.algo-bubble-sort-login {
+  margin-right: var(--dl-space-space-twounits);
+}
+.algo-bubble-sort-icon-group {
+  display: flex;
+}
+.algo-bubble-sort-icon04 {
+  width: var(--dl-size-size-space);
+  height: var(--dl-size-size-space);
+  margin-right: var(--dl-space-space-twounits);
+}
+.algo-bubble-sort-icon06 {
+  width: var(--dl-size-size-space);
+  height: var(--dl-size-size-space);
+  margin-right: var(--dl-space-space-twounits);
+}
+.algo-bubble-sort-icon08 {
+  width: var(--dl-size-size-space);
+  height: var(--dl-size-size-space);
+}
+.algo-bubble-sort-hero {
+  gap: var(--dl-space-space-fiveunits);
+  width: 100%;
+  display: flex;
+  max-width: 1440px;
+  align-items: center;
+  padding-top: var(--dl-space-space-fourunits);
+  padding-left: var(--dl-space-space-fiveunits);
+  padding-right: var(--dl-space-space-fiveunits);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-sixunits);
+}
+.algo-bubble-sort-heading {
+  gap: var(--dl-space-space-twounits);
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+}
+.algo-bubble-sort-header {
+  color: rgb(255, 255, 255);
+  font-size: 90px;
+  max-width: 900px;
+  align-self: center;
+  font-style: normal;
+  text-align: center;
+  font-weight: 500;
+  line-height: 108px;
+}
+.algo-bubble-sort-information {
+  gap: var(--dl-space-space-fiveunits);
+  width: 1024px;
+  display: flex;
+  max-width: 1440px;
+  margin-top: 5px;
+  align-items: flex-start;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  flex-direction: column;
+  padding-bottom: 59px;
+}
+.algo-bubble-sort-container04 {
+  flex: 0 0 auto;
+  width: 100%;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.algo-bubble-sort-features {
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-threeunits);
+  max-width: var(--dl-size-size-maxwidth);
+  flex-direction: column;
+}
+.algo-bubble-sort-text009 {
+  color: rgb(255, 207, 119);
+  font-size: 55px;
+  margin-bottom: var(--dl-space-space-threeunits);
+}
+.algo-bubble-sort-ul {
+  all: initial;
+  line-height: var(--dl-size-size-small);
+  white-space: initial;
+  list-style-type: disc;
+}
+.algo-bubble-sort-li {
+  font-size: 2px;
+  margin-top: var(--dl-space-space-unit);
+  line-height: 1;
+  margin-left: 00px;
+  margin-right: 00px;
+  margin-bottom: var(--dl-space-space-unit);
+}
+.algo-bubble-sort-bold {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  font-style: bold;
+  font-weight: bold;
+}
+.algo-bubble-sort-text010 {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  padding-right: var(--dl-space-space-oneandhalfunits);
+}
+.algo-bubble-sort-text011 {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  line-height: 1;
+}
+.algo-bubble-sort-li01 {
+  font-size: 2px;
+  margin-top: var(--dl-space-space-unit);
+  line-height: 1;
+  margin-left: 00px;
+  margin-right: 00px;
+  margin-bottom: var(--dl-space-space-unit);
+}
+.algo-bubble-sort-bold1 {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  font-style: bold;
+  font-weight: bold;
+}
+.algo-bubble-sort-text012 {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  padding-right: var(--dl-space-space-oneandhalfunits);
+}
+.algo-bubble-sort-text013 {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  line-height: 1;
+}
+.algo-bubble-sort-li02 {
+  font-size: 2px;
+  margin-top: var(--dl-space-space-unit);
+  line-height: 1;
+  margin-left: 00px;
+  margin-right: 00px;
+  margin-bottom: var(--dl-space-space-unit);
+}
+.algo-bubble-sort-bold2 {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  font-style: bold;
+  font-weight: bold;
+}
+.algo-bubble-sort-text014 {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  padding-right: var(--dl-space-space-oneandhalfunits);
+}
+.algo-bubble-sort-text015 {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  line-height: 1;
+}
+.algo-bubble-sort-li03 {
+  margin: 3px;
+  font-size: 2px;
+}
+.algo-bubble-sort-bold3 {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  font-style: bold;
+  font-weight: bold;
+}
+.algo-bubble-sort-text016 {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+}
+.algo-bubble-sort-li04 {
+  margin: 3px;
+  font-size: 2px;
+}
+.algo-bubble-sort-bold4 {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  font-style: bold;
+  font-weight: bold;
+}
+.algo-bubble-sort-text017 {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+}
+.algo-bubble-sort-overview {
+  gap: var(--dl-space-space-fiveunits);
+  width: 1024px;
+  display: flex;
+  max-width: 1440px;
+  margin-top: 5px;
+  align-items: flex-start;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  flex-direction: column;
+  padding-bottom: 59px;
+}
+.algo-bubble-sort-container05 {
+  flex: 0 0 auto;
+  width: 100%;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.algo-bubble-sort-features1 {
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-threeunits);
+  position: relative;
+  max-width: var(--dl-size-size-maxwidth);
+  flex-direction: column;
+}
+.algo-bubble-sort-text020 {
+  color: rgb(255, 207, 119);
+  font-size: 55px;
+  margin-bottom: var(--dl-space-space-threeunits);
+}
+.algo-bubble-sort-text021 {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  align-self: stretch;
+  text-align: justify;
+}
+.algo-bubble-sort-text022 {
+  text-transform: uppercase;
+}
+.algo-bubble-sort-text027 {
+  text-transform: uppercase;
+}
+.algo-bubble-sort-steps {
+  gap: var(--dl-space-space-fiveunits);
+  width: 1024px;
+  display: flex;
+  max-width: 1440px;
+  margin-top: 5px;
+  align-items: flex-start;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  flex-direction: column;
+  padding-bottom: 59px;
+}
+.algo-bubble-sort-container06 {
+  flex: 0 0 auto;
+  width: 100%;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.algo-bubble-sort-features2 {
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-threeunits);
+  position: relative;
+  max-width: var(--dl-size-size-maxwidth);
+  flex-direction: column;
+}
+.algo-bubble-sort-text030 {
+  color: rgb(255, 207, 119);
+  font-size: 55px;
+  margin-bottom: var(--dl-space-space-threeunits);
+}
+.algo-bubble-sort-ul1 {
+  flex: 1;
+  color: var(--dl-color-gray-white);
+  font-size: 30px;
+  line-height: var(--dl-size-size-small);
+}
+.algo-bubble-sort-li05 {
+  margin: 3px;
+}
+.algo-bubble-sort-ul2 {
+  flex: 1;
+  color: var(--dl-color-gray-white);
+  font-size: 30px;
+  line-height: var(--dl-size-size-small);
+  margin-left: var(--dl-space-space-oneandhalfunits);
+}
+.algo-bubble-sort-li06 {
+  margin: 3px;
+}
+.algo-bubble-sort-text034 {
+  line-height: 1;
+}
+.algo-bubble-sort-li07 {
+  margin: 3px;
+}
+.algo-bubble-sort-li08 {
+  margin: 3px;
+}
+.algo-bubble-sort-ul3 {
+  flex: 1;
+  color: var(--dl-color-gray-white);
+  font-size: 30px;
+  line-height: var(--dl-size-size-small);
+  margin-left: var(--dl-space-space-oneandhalfunits);
+}
+.algo-bubble-sort-li09 {
+  margin: 3px;
+}
+.algo-bubble-sort-text043 {
+  line-height: 1;
+}
+.algo-bubble-sort-text045 {
+  line-height: 1;
+}
+.algo-bubble-sort-advantages {
+  gap: var(--dl-space-space-fiveunits);
+  width: 1024px;
+  display: flex;
+  max-width: 1440px;
+  margin-top: 5px;
+  align-items: flex-start;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  flex-direction: column;
+  padding-bottom: 59px;
+}
+.algo-bubble-sort-container07 {
+  flex: 0 0 auto;
+  width: 100%;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.algo-bubble-sort-features3 {
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-threeunits);
+  position: relative;
+  max-width: var(--dl-size-size-maxwidth);
+  flex-direction: column;
+}
+.algo-bubble-sort-text047 {
+  color: rgb(255, 207, 119);
+  font-size: 55px;
+  margin-bottom: var(--dl-space-space-threeunits);
+}
+.algo-bubble-sort-ul4 {
+  flex: 1;
+  color: var(--dl-color-gray-white);
+  font-size: 30px;
+  line-height: var(--dl-size-size-small);
+}
+.algo-bubble-sort-li10 {
+  margin: 3px;
+}
+.algo-bubble-sort-li11 {
+  margin: 3px;
+}
+.algo-bubble-sort-li12 {
+  margin: 3px;
+}
+.algo-bubble-sort-disadvantages {
+  gap: var(--dl-space-space-fiveunits);
+  width: 1024px;
+  display: flex;
+  max-width: 1440px;
+  margin-top: 5px;
+  align-items: flex-start;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  flex-direction: column;
+  padding-bottom: 59px;
+}
+.algo-bubble-sort-container08 {
+  flex: 0 0 auto;
+  width: 100%;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.algo-bubble-sort-features4 {
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-threeunits);
+  position: relative;
+  max-width: var(--dl-size-size-maxwidth);
+  flex-direction: column;
+}
+.algo-bubble-sort-text053 {
+  color: rgb(255, 207, 119);
+  font-size: 55px;
+  margin-bottom: var(--dl-space-space-threeunits);
+}
+.algo-bubble-sort-ul5 {
+  flex: 1;
+  color: var(--dl-color-gray-white);
+  font-size: 30px;
+  line-height: var(--dl-size-size-small);
+}
+.algo-bubble-sort-li13 {
+  margin: 3px;
+}
+.algo-bubble-sort-li14 {
+  margin: 3px;
+}
+.algo-bubble-sort-code {
+  gap: var(--dl-space-space-fiveunits);
+  width: 1024px;
+  display: flex;
+  max-width: 1440px;
+  margin-top: 5px;
+  align-items: flex-start;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  flex-direction: column;
+  padding-bottom: 59px;
+}
+.algo-bubble-sort-container09 {
+  flex: 0 0 auto;
+  width: 100%;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.algo-bubble-sort-features5 {
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-threeunits);
+  position: relative;
+  max-width: var(--dl-size-size-maxwidth);
+  flex-direction: column;
+}
+.algo-bubble-sort-text058 {
+  color: rgb(255, 207, 119);
+  font-size: 55px;
+  margin-bottom: var(--dl-space-space-threeunits);
+}
+.algo-bubble-sort-code1 {
+  color: rgb(254, 107, 107);
+  border: 1px solid #C4C4C4;
+  padding: 1.25em 1.5em;
+  white-space: pre;
+  background-color: rgb(247, 249, 251);
+}
+.algo-bubble-sort-code2 {
+  gap: var(--dl-space-space-fiveunits);
+  width: 1024px;
+  display: flex;
+  max-width: 1440px;
+  margin-top: 5px;
+  align-items: flex-start;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  flex-direction: column;
+  padding-bottom: 59px;
+}
+.algo-bubble-sort-container10 {
+  flex: 0 0 auto;
+  width: 100%;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.algo-bubble-sort-features6 {
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-threeunits);
+  position: relative;
+  max-width: var(--dl-size-size-maxwidth);
+  flex-direction: column;
+}
+.algo-bubble-sort-text074 {
+  color: rgb(255, 207, 119);
+  font-size: 55px;
+  margin-bottom: var(--dl-space-space-threeunits);
+}
+.algo-bubble-sort-code3 {
+  color: rgb(254, 107, 107);
+  border: 1px solid #C4C4C4;
+  padding: 1.25em 1.5em;
+  white-space: pre;
+  background-color: rgb(247, 249, 251);
+}
+.algo-bubble-sort-code4 {
+  gap: var(--dl-space-space-fiveunits);
+  width: 1024px;
+  display: flex;
+  max-width: 1440px;
+  margin-top: 5px;
+  align-items: flex-start;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  flex-direction: column;
+  padding-bottom: 59px;
+}
+.algo-bubble-sort-container11 {
+  flex: 0 0 auto;
+  width: 100%;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.algo-bubble-sort-features7 {
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-threeunits);
+  position: relative;
+  max-width: var(--dl-size-size-maxwidth);
+  flex-direction: column;
+}
+.algo-bubble-sort-text105 {
+  color: rgb(255, 207, 119);
+  font-size: 55px;
+  margin-bottom: var(--dl-space-space-threeunits);
+}
+.algo-bubble-sort-code5 {
+  color: rgb(254, 107, 107);
+  border: 1px solid #C4C4C4;
+  padding: 1.25em 1.5em;
+  white-space: pre;
+  background-color: rgb(247, 249, 251);
+}
+.algo-bubble-sort-example {
+  gap: var(--dl-space-space-fiveunits);
+  width: 1024px;
+  display: flex;
+  max-width: 1440px;
+  margin-top: 5px;
+  align-items: flex-start;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  flex-direction: column;
+  padding-bottom: 59px;
+}
+.algo-bubble-sort-container12 {
+  flex: 0 0 auto;
+  width: 100%;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.algo-bubble-sort-features8 {
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-threeunits);
+  position: relative;
+  max-width: var(--dl-size-size-maxwidth);
+  flex-direction: column;
+}
+.algo-bubble-sort-text117 {
+  color: rgb(255, 207, 119);
+  font-size: 55px;
+  margin-bottom: var(--dl-space-space-threeunits);
+}
+.algo-bubble-sort-text118 {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  align-self: stretch;
+  text-align: justify;
+}
+.algo-bubble-sort-text120 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-bubble-sort-text122 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-bubble-sort-text125 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-bubble-sort-text128 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-bubble-sort-text130 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-bubble-sort-text133 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-bubble-sort-text136 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-bubble-sort-text139 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-bubble-sort-text141 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-bubble-sort-text144 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-bubble-sort-text147 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-bubble-sort-text150 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-bubble-sort-text153 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-bubble-sort-text156 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-bubble-sort-text159 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-bubble-sort-text161 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-bubble-sort-text164 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-bubble-sort-text167 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-bubble-sort-text170 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-bubble-sort-text173 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-bubble-sort-text175 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-bubble-sort-text178 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-bubble-sort-text181 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.algo-bubble-sort-footer {
+  gap: var(--dl-space-space-threeunits);
+  width: 100%;
+  display: flex;
+  position: relative;
+  max-width: 1440px;
+  align-items: flex-start;
+  padding-top: 120px;
+  padding-left: var(--dl-space-space-fiveunits);
+  padding-right: var(--dl-space-space-fiveunits);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-threeunits);
+}
+.algo-bubble-sort-main {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.algo-bubble-sort-branding {
+  gap: var(--dl-space-space-threeunits);
+  display: flex;
+  max-width: 600px;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.algo-bubble-sort-heading1 {
+  gap: var(--dl-space-space-threeunits);
+  width: 191px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.algo-bubble-sort-logo2 {
+  color: rgb(255, 255, 255);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+}
+.algo-bubble-sort-caption {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  align-self: center;
+  text-align: center;
+  line-height: 27px;
+}
+.algo-bubble-sort-socials1 {
+  gap: var(--dl-space-space-unit);
+  display: flex;
+  align-self: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.algo-bubble-sort-twitter1 {
+  text-decoration: none;
+}
+.algo-bubble-sort-image3 {
+  width: 100px;
+  object-fit: cover;
+}
+.algo-bubble-sort-discord1 {
+  text-decoration: none;
+}
+.algo-bubble-sort-image4 {
+  width: 100px;
+  object-fit: cover;
+}
+.algo-bubble-sort-links {
+  gap: 120px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.algo-bubble-sort-list {
+  gap: var(--dl-space-space-threeunits);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.algo-bubble-sort-heading2 {
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+}
+.algo-bubble-sort-items {
+  gap: var(--dl-space-space-oneandhalfunits);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.algo-bubble-sort-link {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.algo-bubble-sort-link01 {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.algo-bubble-sort-link02 {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.algo-bubble-sort-link03 {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.algo-bubble-sort-link04 {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.algo-bubble-sort-link05 {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.algo-bubble-sort-link06 {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.algo-bubble-sort-link07 {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.algo-bubble-sort-list1 {
+  gap: var(--dl-space-space-threeunits);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.algo-bubble-sort-navlink5 {
+  display: contents;
+}
+.algo-bubble-sort-heading3 {
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  text-decoration: none;
+}
+.algo-bubble-sort-items1 {
+  gap: var(--dl-space-space-oneandhalfunits);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.algo-bubble-sort-link08 {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.algo-bubble-sort-link09 {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.algo-bubble-sort-link10 {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.algo-bubble-sort-link11 {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.algo-bubble-sort-socials2 {
+  gap: var(--dl-space-space-unit);
+  display: none;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.algo-bubble-sort-twitter2 {
+  text-decoration: none;
+}
+.algo-bubble-sort-image5 {
+  width: 100px;
+  object-fit: cover;
+}
+.algo-bubble-sort-discord2 {
+  text-decoration: none;
+}
+.algo-bubble-sort-image6 {
+  width: 100px;
+  object-fit: cover;
+}
+.algo-bubble-sort-copyright {
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+}
+.algo-bubble-sort-container14 {
+  display: contents;
+}
+@media(max-width: 991px) {
+  .algo-bubble-sort-desktop-menu {
+    display: none;
+  }
+  .algo-bubble-sort-btn-group {
+    display: none;
+  }
+  .algo-bubble-sort-burger-menu {
+    display: flex;
+  }
+  .algo-bubble-sort-button1 {
+    display: flex;
+    padding: var(--dl-space-space-unit);
+    flex-direction: row;
+  }
+  .algo-bubble-sort-logo1 {
+    color: #000000;
+  }
+  .algo-bubble-sort-information {
+    width: 784px;
+    height: 2164px;
+    padding-left: 0px;
+  }
+  .algo-bubble-sort-container04 {
+    width: 265px;
+  }
+  .algo-bubble-sort-text009 {
+    align-self: center;
+  }
+  .algo-bubble-sort-overview {
+    width: 784px;
+    height: 2164px;
+    padding-left: 0px;
+  }
+  .algo-bubble-sort-container05 {
+    width: 265px;
+  }
+  .algo-bubble-sort-text020 {
+    align-self: center;
+  }
+  .algo-bubble-sort-steps {
+    width: 784px;
+    height: 2164px;
+    padding-left: 0px;
+  }
+  .algo-bubble-sort-container06 {
+    width: 265px;
+  }
+  .algo-bubble-sort-text030 {
+    align-self: center;
+  }
+  .algo-bubble-sort-advantages {
+    width: 784px;
+    height: 2164px;
+    padding-left: 0px;
+  }
+  .algo-bubble-sort-container07 {
+    width: 265px;
+  }
+  .algo-bubble-sort-text047 {
+    align-self: center;
+  }
+  .algo-bubble-sort-disadvantages {
+    width: 784px;
+    height: 2164px;
+    padding-left: 0px;
+  }
+  .algo-bubble-sort-container08 {
+    width: 265px;
+  }
+  .algo-bubble-sort-text053 {
+    align-self: center;
+  }
+  .algo-bubble-sort-code {
+    width: 784px;
+    height: 2164px;
+    padding-left: 0px;
+  }
+  .algo-bubble-sort-container09 {
+    width: 265px;
+  }
+  .algo-bubble-sort-text058 {
+    align-self: center;
+  }
+  .algo-bubble-sort-code2 {
+    width: 784px;
+    height: 2164px;
+    padding-left: 0px;
+  }
+  .algo-bubble-sort-container10 {
+    width: 265px;
+  }
+  .algo-bubble-sort-text074 {
+    align-self: center;
+  }
+  .algo-bubble-sort-code4 {
+    width: 784px;
+    height: 2164px;
+    padding-left: 0px;
+  }
+  .algo-bubble-sort-container11 {
+    width: 265px;
+  }
+  .algo-bubble-sort-text105 {
+    align-self: center;
+  }
+  .algo-bubble-sort-example {
+    width: 784px;
+    height: 2164px;
+    padding-left: 0px;
+  }
+  .algo-bubble-sort-container12 {
+    width: 265px;
+  }
+  .algo-bubble-sort-text117 {
+    align-self: center;
+  }
+}
+@media(max-width: 767px) {
+  .algo-bubble-sort-navbar {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+  .algo-bubble-sort-hero {
+    padding-top: var(--dl-space-space-threeunits);
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    padding-right: var(--dl-space-space-oneandhalfunits);
+    padding-bottom: var(--dl-space-space-twounits);
+  }
+  .algo-bubble-sort-heading {
+    gap: var(--dl-space-space-unit);
+  }
+  .algo-bubble-sort-header {
+    font-size: 36px;
+    max-width: 70%;
+    line-height: 43px;
+  }
+  .algo-bubble-sort-information {
+    gap: var(--dl-space-space-fourunits);
+    height: 1089px;
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    margin-bottom: 0px;
+    padding-right: var(--dl-space-space-oneandhalfunits);
+  }
+  .algo-bubble-sort-features {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+  .algo-bubble-sort-overview {
+    gap: var(--dl-space-space-fourunits);
+    height: 1089px;
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    margin-bottom: 0px;
+    padding-right: var(--dl-space-space-oneandhalfunits);
+  }
+  .algo-bubble-sort-features1 {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+  .algo-bubble-sort-steps {
+    gap: var(--dl-space-space-fourunits);
+    height: 1089px;
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    margin-bottom: 0px;
+    padding-right: var(--dl-space-space-oneandhalfunits);
+  }
+  .algo-bubble-sort-features2 {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+  .algo-bubble-sort-advantages {
+    gap: var(--dl-space-space-fourunits);
+    height: 1089px;
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    margin-bottom: 0px;
+    padding-right: var(--dl-space-space-oneandhalfunits);
+  }
+  .algo-bubble-sort-features3 {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+  .algo-bubble-sort-disadvantages {
+    gap: var(--dl-space-space-fourunits);
+    height: 1089px;
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    margin-bottom: 0px;
+    padding-right: var(--dl-space-space-oneandhalfunits);
+  }
+  .algo-bubble-sort-features4 {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+  .algo-bubble-sort-code {
+    gap: var(--dl-space-space-fourunits);
+    height: 1089px;
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    margin-bottom: 0px;
+    padding-right: var(--dl-space-space-oneandhalfunits);
+  }
+  .algo-bubble-sort-features5 {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+  .algo-bubble-sort-code2 {
+    gap: var(--dl-space-space-fourunits);
+    height: 1089px;
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    margin-bottom: 0px;
+    padding-right: var(--dl-space-space-oneandhalfunits);
+  }
+  .algo-bubble-sort-features6 {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+  .algo-bubble-sort-code4 {
+    gap: var(--dl-space-space-fourunits);
+    height: 1089px;
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    margin-bottom: 0px;
+    padding-right: var(--dl-space-space-oneandhalfunits);
+  }
+  .algo-bubble-sort-features7 {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+  .algo-bubble-sort-example {
+    gap: var(--dl-space-space-fourunits);
+    height: 1089px;
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    margin-bottom: 0px;
+    padding-right: var(--dl-space-space-oneandhalfunits);
+  }
+  .algo-bubble-sort-features8 {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+  .algo-bubble-sort-footer {
+    gap: var(--dl-space-space-oneandhalfunits);
+    padding-top: var(--dl-space-space-fourunits);
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    padding-right: var(--dl-space-space-oneandhalfunits);
+  }
+  .algo-bubble-sort-main {
+    gap: var(--dl-space-space-threeunits);
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .algo-bubble-sort-heading1 {
+    gap: var(--dl-space-space-unit);
+  }
+  .algo-bubble-sort-logo2 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .algo-bubble-sort-caption {
+    width: 80%;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .algo-bubble-sort-socials1 {
+    display: none;
+  }
+  .algo-bubble-sort-links {
+    gap: var(--dl-space-space-fourunits);
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .algo-bubble-sort-list {
+    gap: var(--dl-space-space-oneandhalfunits);
+  }
+  .algo-bubble-sort-list1 {
+    gap: var(--dl-space-space-oneandhalfunits);
+  }
+  .algo-bubble-sort-socials2 {
+    display: flex;
+  }
+}
+@media(max-width: 479px) {
+  .algo-bubble-sort-navbar {
+    padding: var(--dl-space-space-unit);
+  }
+  .algo-bubble-sort-mobile-menu {
+    padding: 16px;
+  }
+  .algo-bubble-sort-features {
+    padding-top: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-twounits);
+  }
+  .algo-bubble-sort-features1 {
+    padding-top: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-twounits);
+  }
+  .algo-bubble-sort-features2 {
+    padding-top: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-twounits);
+  }
+  .algo-bubble-sort-features3 {
+    padding-top: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-twounits);
+  }
+  .algo-bubble-sort-features4 {
+    padding-top: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-twounits);
+  }
+  .algo-bubble-sort-features5 {
+    padding-top: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-twounits);
+  }
+  .algo-bubble-sort-features6 {
+    padding-top: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-twounits);
+  }
+  .algo-bubble-sort-features7 {
+    padding-top: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-twounits);
+  }
+  .algo-bubble-sort-features8 {
+    padding-top: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-twounits);
+  }
+}

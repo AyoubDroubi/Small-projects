@@ -1,0 +1,27 @@
+.bucket-sort-feature-card {
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  max-width: var(--dl-size-size-maxwidth);
+  box-shadow: 5px 5px 10px 0px rgba(18, 18, 18, 0.1);
+  transition: 0.3s;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.bucket-sort-feature-card:hover {
+  transform: scale(1.02);
+}
+.bucket-sort-text {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+.bucket-sort-image {
+  width: 139px;
+  height: 109px;
+  object-fit: cover;
+}
+
+
+
+

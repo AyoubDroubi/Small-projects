@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Algo-Counting-Sort - Algorthamia</title>
+    <meta property="og:title" content="Algo-Counting-Sort - Algorthamia" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+    <!--This is the head section-->
+    <!-- <style> ... </style> -->
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./algo-counting-sort.css" rel="stylesheet" />
+
+      <div class="algo-counting-sort-container">
+        <div class="algo-counting-sort-container01">
+          <img
+            alt="image"
+            src="public/pycharm_logo-removebg-preview1-200w.png"
+            class="algo-counting-sort-image"
+          />
+          <header data-thq="thq-navbar" class="algo-counting-sort-navbar">
+            <span class="algo-counting-sort-logo">Algorthamia</span>
+            <div
+              data-thq="thq-navbar-nav"
+              data-role="Nav"
+              class="algo-counting-sort-desktop-menu"
+            >
+              <nav
+                data-thq="thq-navbar-nav-links"
+                data-role="Nav"
+                class="algo-counting-sort-nav"
+              >
+                <a
+                  href="index.html"
+                  class="algo-counting-sort-navlink button-clean button"
+                >
+                  Home
+                </a>
+                <a
+                  href="comparison.html"
+                  class="algo-counting-sort-navlink1 button-clean button"
+                >
+                  Comparison
+                </a>
+                <a
+                  href="design-technique.html"
+                  class="algo-counting-sort-navlink2 button-clean button"
+                >
+                  <span class="algo-counting-sort-text">
+                    <span>Design</span>
+                    <br />
+                    <span>Technique</span>
+                  </span>
+                </a>
+                <a
+                  href="calculate.html"
+                  class="algo-counting-sort-navlink3 button-clean button"
+                >
+                  Calculate
+                </a>
+                <div class="algo-counting-sort-socials">
+                  <button class="social button">
+                    <img
+                      alt="image"
+                      src="public/Icons/twitter.svg"
+                      class="algo-counting-sort-image1"
+                    />
+                  </button>
+                  <button class="social button">
+                    <img
+                      alt="image"
+                      src="public/Icons/discord.svg"
+                      class="algo-counting-sort-image2"
+                    />
+                  </button>
+                </div>
+                <a
+                  href="log-in.html"
+                  class="algo-counting-sort-navlink4 button-clean button"
+                >
+                  LogIn
+                </a>
+                <a
+                  href="sign-up.html"
+                  class="algo-counting-sort-button button-clean button"
+                >
+                  sign Up
+                </a>
+              </nav>
+            </div>
+            <div
+              data-thq="thq-navbar-btn-group"
+              class="algo-counting-sort-btn-group"
+            ></div>
+            <div
+              data-thq="thq-burger-menu"
+              class="algo-counting-sort-burger-menu"
+            >
+              <button class="button algo-counting-sort-button1">
+                <svg viewBox="0 0 1024 1024" class="algo-counting-sort-icon">
+                  <path
+                    d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <div
+              data-thq="thq-mobile-menu"
+              class="algo-counting-sort-mobile-menu"
+            >
+              <div
+                data-thq="thq-mobile-menu-nav"
+                data-role="Nav"
+                class="algo-counting-sort-nav1"
+              >
+                <div class="algo-counting-sort-container02">
+                  <span class="algo-counting-sort-logo1">Character</span>
+                  <div
+                    data-thq="thq-close-menu"
+                    class="algo-counting-sort-menu-close"
+                  >
+                    <svg
+                      viewBox="0 0 1024 1024"
+                      class="algo-counting-sort-icon02"
+                    >
+                      <path
+                        d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <nav
+                  data-thq="thq-mobile-menu-nav-links"
+                  data-role="Nav"
+                  class="algo-counting-sort-nav2"
+                >
+                  <span class="algo-counting-sort-text004">About</span>
+                  <span class="algo-counting-sort-text005">Features</span>
+                  <span class="algo-counting-sort-text006">Pricing</span>
+                  <span class="algo-counting-sort-text007">Team</span>
+                  <span class="algo-counting-sort-text008">Blog</span>
+                </nav>
+                <div class="algo-counting-sort-container03">
+                  <button class="algo-counting-sort-login button">Login</button>
+                  <button class="button">Register</button>
+                </div>
+              </div>
+              <div class="algo-counting-sort-icon-group">
+                <svg
+                  viewBox="0 0 950.8571428571428 1024"
+                  class="algo-counting-sort-icon04"
+                >
+                  <path
+                    d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                  ></path></svg
+                ><svg
+                  viewBox="0 0 877.7142857142857 1024"
+                  class="algo-counting-sort-icon06"
+                >
+                  <path
+                    d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                  ></path></svg
+                ><svg
+                  viewBox="0 0 602.2582857142856 1024"
+                  class="algo-counting-sort-icon08"
+                >
+                  <path
+                    d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </header>
+        </div>
+        <section class="algo-counting-sort-hero">
+          <div class="algo-counting-sort-heading">
+            <h1 class="algo-counting-sort-header">Counting Sort</h1>
+          </div>
+        </section>
+        <section class="algo-counting-sort-information">
+          <div class="algo-counting-sort-container04"></div>
+          <div class="algo-counting-sort-features">
+            <h2 id="information" class="algo-counting-sort-text009">
+              information
+            </h2>
+            <ul class="algo-counting-sort-ul list">
+              <li class="algo-counting-sort-li list-item">
+                <span class="algo-counting-sort-bold">Worst Case :&nbsp;</span>
+                <span class="algo-counting-sort-text010">O(n + k)</span>
+                <span class="algo-counting-sort-text011">
+                  - where n is the number of elements and k is the range of
+                  input values.
+                </span>
+              </li>
+              <li class="algo-counting-sort-li01 list-item">
+                <span class="algo-counting-sort-bold1">
+                  Average Case :&nbsp;
+                </span>
+                <span class="algo-counting-sort-text012">O(n + k)</span>
+              </li>
+              <li class="algo-counting-sort-li02 list-item">
+                <span class="algo-counting-sort-bold2">Best Case :</span>
+                <span class="algo-counting-sort-text013">O(n + k)</span>
+              </li>
+              <li class="algo-counting-sort-li03 list-item">
+                <span class="algo-counting-sort-bold3">
+                  Design Technique :&nbsp;
+                </span>
+                <span class="algo-counting-sort-text014">
+                  Incremental Technique - (Non-comparison)
+                </span>
+              </li>
+              <li class="algo-counting-sort-li04 list-item">
+                <span class="algo-counting-sort-bold4">
+                  Space Complexity :&nbsp;
+                </span>
+                <span class="algo-counting-sort-text015">
+                  <span>
+                    O(k)&nbsp;-&nbsp;(out place) -&nbsp;Needs extra space to
+                    store the count array, where k is the range of input values.
+                  </span>
+                  <br />
+                </span>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="algo-counting-sort-overview">
+          <div class="algo-counting-sort-container05"></div>
+          <div class="algo-counting-sort-features1">
+            <h2 id="Overview" class="algo-counting-sort-text018">Overview</h2>
+            <span class="algo-counting-sort-text019">
+              <span class="algo-counting-sort-text020">Counting Sort</span>
+              <span>
+                : is a non-comparison-based sorting algorithm that works well
+                when there is limited range of input values. It is particularly
+                efficient when the range of input values is small compared to
+                the number of elements to be sorted. The basic idea behind
+                Counting Sort is to count the frequency of each distinct element
+                in the input array and use that information to place the
+                elements in their correct sorted positions.
+              </span>
+              <br />
+              <br />
+              <span></span>
+              <span class="algo-counting-sort-text025">Definition :</span>
+              <span>
+                A sorting algorithm that works by counting the occurrences of
+                each distinct value in the input array, then using those counts
+                to determine the positions of each value in the sorted array.
+              </span>
+              <br />
+            </span>
+          </div>
+        </section>
+        <section class="algo-counting-sort-steps">
+          <div class="algo-counting-sort-container06"></div>
+          <div class="algo-counting-sort-features2">
+            <h2 id="Steps" class="algo-counting-sort-text028">Steps</h2>
+            <ol class="algo-counting-sort-ul1 list">
+              <li class="algo-counting-sort-li05 list-item">
+                <span>
+                  <span>Find the maximum value (k) in the input array.</span>
+                  <br />
+                </span>
+              </li>
+              <li class="algo-counting-sort-li06 list-item">
+                <span>
+                  <span>
+                    Create a count array of size k+1, initializing all counts to
+                    0.
+                  </span>
+                  <br />
+                </span>
+              </li>
+              <li class="algo-counting-sort-li07 list-item">
+                <span>
+                  <span>
+                    Iterate through the input array and count the occurrences of
+                    each value in the count array.
+                  </span>
+                  <br />
+                </span>
+              </li>
+              <li class="algo-counting-sort-li08 list-item">
+                <span>
+                  <span>
+                    Modify the count array to store the cumulative sum of
+                    counts.
+                  </span>
+                  <br />
+                </span>
+              </li>
+              <li class="algo-counting-sort-li09 list-item">
+                <span>
+                  <span>
+                    Create an empty output array of the same size as the input
+                    array.
+                  </span>
+                  <br />
+                </span>
+              </li>
+              <li class="algo-counting-sort-li10 list-item">
+                <span>
+                  <span>
+                    Iterate through the input array again and place each element
+                    in its correct position in the output array based on the
+                    cumulative counts.
+                  </span>
+                  <br />
+                </span>
+              </li>
+              <li class="algo-counting-sort-li11 list-item">
+                <span>
+                  <span>Copy the output array back to the original array.</span>
+                  <br />
+                </span>
+              </li>
+            </ol>
+          </div>
+        </section>
+        <section class="algo-counting-sort-advantages">
+          <div class="algo-counting-sort-container07"></div>
+          <div class="algo-counting-sort-features3">
+            <h2 id="Advantages" class="algo-counting-sort-text050">
+              Advantages
+            </h2>
+            <ol class="algo-counting-sort-ul2 list">
+              <li class="algo-counting-sort-li12 list-item">
+                <span>
+                  Linear time complexity for a limited range of input values.
+                </span>
+              </li>
+              <li class="algo-counting-sort-li13 list-item">
+                <span>
+                  Efficient for large datasets with a small range of values.
+                </span>
+              </li>
+              <li class="algo-counting-sort-li14 list-item">
+                <span>Stable sorting algorithm.</span>
+              </li>
+            </ol>
+          </div>
+        </section>
+        <section class="algo-counting-sort-disadvantages">
+          <div class="algo-counting-sort-container08"></div>
+          <div class="algo-counting-sort-features4">
+            <h2 id="Disadvantages" class="algo-counting-sort-text054">
+              Disadvantages
+            </h2>
+            <ol class="algo-counting-sort-ul3 list">
+              <li class="algo-counting-sort-li15 list-item">
+                <span>
+                  <span>
+                    Space complexity can be high if the range of input values is
+                    large.
+                  </span>
+                  <br />
+                </span>
+              </li>
+              <li class="algo-counting-sort-li16 list-item">
+                <span>
+                  Not suitable for general-purpose sorting when the range of
+                  values is unknown or unbounded.
+                </span>
+              </li>
+            </ol>
+          </div>
+        </section>
+        <section class="algo-counting-sort-code">
+          <div class="algo-counting-sort-container09"></div>
+          <div class="algo-counting-sort-features5">
+            <h2 id="Pseudo Code" class="algo-counting-sort-text059">
+              Pseudo Code
+            </h2>
+            <span class="algo-counting-sort-code1">
+              <span>procedure countingSort(A, k)</span>
+              <br />
+              <span>array C[0..k]</span>
+              <br />
+              <span>for i = 0 to k</span>
+              <br />
+              <span>C[i] = 0</span>
+              <br />
+              <span>for j = 1 to length(A)</span>
+              <br />
+              <span>C[A[j]] = C[A[j]] + 1</span>
+              <br />
+              <span>for i = 1 to k</span>
+              <br />
+              <span>C[i] = C[i] + C[i - 1]</span>
+              <br />
+              <span>for j = length(A) downto 1</span>
+              <br />
+              <span>B[C[A[j]]] = A[j]</span>
+              <br />
+              <span>C[A[j]] = C[A[j]] - 1</span>
+              <br />
+              <span>return B</span>
+            </span>
+          </div>
+        </section>
+        <section class="algo-counting-sort-code2">
+          <div class="algo-counting-sort-container10"></div>
+          <div class="algo-counting-sort-features6">
+            <h2 id="Code in Java" class="algo-counting-sort-text083">
+              Code in Java
+            </h2>
+            <span class="algo-counting-sort-code3">
+              <span>public class CountingSort {</span>
+              <br />
+              <span>public static void countingSort(int[] arr, int k) {</span>
+              <br />
+              <span>int[] count = new int[k + 1];</span>
+              <br />
+              <span>int[] output = new</span>
+              <br />
+              <span>int[arr.length];</span>
+              <br />
+              <br />
+              <span>for (int i = 0; i &lt; arr.length; i++) {</span>
+              <br />
+              <span>count[arr[i]]++;</span>
+              <br />
+              <span>}</span>
+              <br />
+              <br />
+              <span>for (int i = 1; i &lt;= k; i++) {</span>
+              <br />
+              <span>count[i] += count[i - 1];</span>
+              <br />
+              <span>}</span>
+              <br />
+              <br />
+              <span>for (int i = arr.length - 1; i &gt;= 0; i--) {</span>
+              <br />
+              <span>output[count[arr[i]] - 1] = arr[i];</span>
+              <br />
+              <span>count[arr[i]]--;</span>
+              <br />
+              <span>}</span>
+              <br />
+              <br />
+              <span>System.arraycopy(output, 0, arr, 0, arr.length);</span>
+              <br />
+              <span>}</span>
+              <br />
+              <span>}</span>
+            </span>
+          </div>
+        </section>
+        <section class="algo-counting-sort-code4">
+          <div class="algo-counting-sort-container11"></div>
+          <div class="algo-counting-sort-features7">
+            <h2 id="Code in Python" class="algo-counting-sort-text123">
+              Code in Python
+            </h2>
+            <span class="algo-counting-sort-code5">
+              <span>def counting_sort(arr, k):</span>
+              <br />
+              <span>count = [0] * (k + 1)</span>
+              <br />
+              <span>output = [0] * len(arr)</span>
+              <br />
+              <br />
+              <span>for i in arr:</span>
+              <br />
+              <span>count[i] += 1</span>
+              <br />
+              <br />
+              <span>for i in range(1, k + 1):</span>
+              <br />
+              <span>count[i] += count[i - 1]</span>
+              <br />
+              <br />
+              <span>for i in arr[::-1]:</span>
+              <br />
+              <span>output[count[i] - 1] = i</span>
+              <br />
+              <span>count[i] -= 1</span>
+              <br />
+              <br />
+              <span>return output</span>
+            </span>
+          </div>
+        </section>
+        <section class="algo-counting-sort-example">
+          <div class="algo-counting-sort-container12"></div>
+          <div class="algo-counting-sort-features8">
+            <h2 id="Example" class="algo-counting-sort-text149">Example</h2>
+            <span class="algo-counting-sort-text150">
+              <br class="algo-counting-sort-text151" />
+              <br />
+              <span>
+                Here's a full example of Counting Sort step by step, using the
+                array [3, 2, 1, 4, 3, 2]:
+              </span>
+              <br class="algo-counting-sort-text154" />
+              <br />
+              <br class="algo-counting-sort-text156" />
+              <br />
+              <span>1. Find the maximum value (k):</span>
+              <br class="algo-counting-sort-text159" />
+              <br />
+              <br class="algo-counting-sort-text161" />
+              <br />
+              <span>k = 4 (the largest element in the array)</span>
+              <br class="algo-counting-sort-text164" />
+              <br />
+              <span>2. Create the count array:</span>
+              <br class="algo-counting-sort-text167" />
+              <br />
+              <br class="algo-counting-sort-text169" />
+              <br />
+              <span>count = [0, 0, 0, 0, 0] (size k+1)</span>
+              <br class="algo-counting-sort-text172" />
+              <br />
+              <span>3. Count occurrences in the input array:</span>
+              <br class="algo-counting-sort-text175" />
+              <br />
+              <br class="algo-counting-sort-text177" />
+              <br />
+              <span>
+                count becomes [2, 2, 1, 1, 1] (counting 3s, 2s, 1s, 4s, and 0s)
+              </span>
+              <br class="algo-counting-sort-text180" />
+              <br />
+              <span>4. Modify count array for cumulative sums:</span>
+              <br class="algo-counting-sort-text183" />
+              <br />
+              <br class="algo-counting-sort-text185" />
+              <br />
+              <span>
+                count becomes [2, 4, 5, 6, 7] (each index now stores the sum of
+                counts up to that point)
+              </span>
+              <br class="algo-counting-sort-text188" />
+              <br />
+              <span>5. Create an empty output array:</span>
+              <br class="algo-counting-sort-text191" />
+              <br />
+              <br class="algo-counting-sort-text193" />
+              <br />
+              <span>
+                output = [0, 0, 0, 0, 0, 0] (same size as the input array)
+              </span>
+              <br class="algo-counting-sort-text196" />
+              <br />
+              <span>6. Place elements in output array:</span>
+              <br class="algo-counting-sort-text199" />
+              <br />
+              <br class="algo-counting-sort-text201" />
+              <br />
+              <span>Iterate through the input array in reverse order:</span>
+              <br class="algo-counting-sort-text204" />
+              <br />
+              <span>
+                3 at index count[3]-1 (which is 5), so output becomes [0, 0, 0,
+                3, 0, 0]
+              </span>
+              <br class="algo-counting-sort-text207" />
+              <br />
+              <span>
+                2 at index count[2]-1 (which is 3), so output becomes [0, 0, 2,
+                3, 0, 0]
+              </span>
+              <br class="algo-counting-sort-text210" />
+              <br />
+              <span>
+                1 at index count[1]-1 (which is 1), so output becomes [1, 0, 2,
+                3, 0, 0]
+              </span>
+              <br class="algo-counting-sort-text213" />
+              <br />
+              <span>And so on...</span>
+              <br class="algo-counting-sort-text216" />
+              <br />
+              <span>7. Copy output array back:</span>
+              <br class="algo-counting-sort-text219" />
+              <br />
+              <br class="algo-counting-sort-text221" />
+              <br />
+              <span>The final sorted array becomes [1, 2, 2, 3, 3, 4]</span>
+            </span>
+          </div>
+        </section>
+        <footer class="algo-counting-sort-footer">
+          <div class="algo-counting-sort-main">
+            <div class="algo-counting-sort-branding">
+              <div class="algo-counting-sort-heading1">
+                <h2 class="algo-counting-sort-logo2">Algorthamia</h2>
+                <p class="algo-counting-sort-caption">
+                  Thank you for being on the website
+                </p>
+              </div>
+              <div class="algo-counting-sort-socials1">
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="algo-counting-sort-twitter1 social button"
+                >
+                  <img
+                    alt="image"
+                    src="public/Icons/twitter.svg"
+                    class="algo-counting-sort-image3"
+                  />
+                </a>
+                <a
+                  href="https://discord.com"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="algo-counting-sort-discord1 social button"
+                >
+                  <img
+                    alt="image"
+                    src="public/Icons/discord.svg"
+                    class="algo-counting-sort-image4"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="algo-counting-sort-links">
+              <div class="algo-counting-sort-list">
+                <h3 class="algo-counting-sort-heading2">Site</h3>
+                <div class="algo-counting-sort-items">
+                  <a
+                    href="#information"
+                    class="algo-counting-sort-link button-clean button"
+                  >
+                    information
+                  </a>
+                  <a
+                    href="#Overview"
+                    class="algo-counting-sort-link01 button-clean button"
+                  >
+                    Overview
+                  </a>
+                  <a
+                    href="#Steps"
+                    class="algo-counting-sort-link02 button-clean button"
+                  >
+                    Steps
+                  </a>
+                  <a
+                    href="#Advantages"
+                    class="algo-counting-sort-link03 button-clean button"
+                  >
+                    Advantages
+                  </a>
+                  <a
+                    href="#Disadvantages"
+                    class="algo-counting-sort-link04 button-clean button"
+                  >
+                    Disadvantages
+                  </a>
+                  <a
+                    href="#Pseudo Code"
+                    class="algo-counting-sort-link05 button-clean button"
+                  >
+                    Pseudo Code
+                  </a>
+                  <a
+                    href="#Code in Java"
+                    class="algo-counting-sort-link06 button-clean button"
+                  >
+                    Code
+                  </a>
+                  <a
+                    href="#Example"
+                    class="algo-counting-sort-link07 button-clean button"
+                  >
+                    Example
+                  </a>
+                </div>
+              </div>
+              <div class="algo-counting-sort-list1">
+                <a
+                  href="design-technique.html"
+                  class="algo-counting-sort-navlink5"
+                >
+                  <h3 class="algo-counting-sort-heading3">Algorthamia</h3>
+                </a>
+                <div class="algo-counting-sort-items1">
+                  <a
+                    href="index.html"
+                    class="algo-counting-sort-link08 button-clean button"
+                  >
+                    Home
+                  </a>
+                  <a
+                    href="comparison.html"
+                    class="algo-counting-sort-link09 button-clean button"
+                  >
+                    Comparison
+                  </a>
+                  <a
+                    href="design-technique.html"
+                    class="algo-counting-sort-link10 button-clean button"
+                  >
+                    Design Technique
+                  </a>
+                  <a
+                    href="calculate.html"
+                    class="algo-counting-sort-link11 button-clean button"
+                  >
+                    Calcuate
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="algo-counting-sort-socials2">
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="algo-counting-sort-twitter2 social button"
+              >
+                <img
+                  alt="image"
+                  src="public/Icons/twitter.svg"
+                  class="algo-counting-sort-image5"
+                />
+              </a>
+              <a
+                href="https://discord.com"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="algo-counting-sort-discord2 social button"
+              >
+                <img
+                  alt="image"
+                  src="public/Icons/discord.svg"
+                  class="algo-counting-sort-image6"
+                />
+              </a>
+            </div>
+          </div>
+          <span class="algo-counting-sort-copyright">© 2023 .</span>
+        </footer>
+        <div>
+          <div class="algo-counting-sort-container14">
+            <script>
+              /*
+               Accordion - Code Embed
+               */
+               const accordionContainers = document.querySelectorAll('[data-role='accordion-container']'); // All accordion containers
+               const accordionContents = document.querySelectorAll('[data-role='accordion-content']'); // All accordion content
+               const accordionIconsClosed = document.querySelectorAll('[data-role='accordion-icon-closed']'); // All accordion closed icons
+               const accordionIconsOpen = document.querySelectorAll('[data-role='accordion-icon-open']'); // All accordion open icons
+
+               accordionContents.forEach((accordionContent) => {
+                   accordionContent.style.display = 'none'; //Hides all accordion contents
+               });
+
+               accordionIconsClosed.forEach((icon) => {
+                 icon.style.display = 'flex'
+               })
+
+               accordionIconsOpen.forEach((icon) => {
+                 icon.style.display = 'none'
+               })
+
+               accordionContainers.forEach((accordionContainer, index) => {
+                   accordionContainer.addEventListener('click', () => {
+                       if (accordionContents[index].style.display === 'flex') {
+                           // If the accordion is already open, close it
+                           accordionContents[index].style.display = 'none';
+                           accordionIconsClosed[index].style.display = 'flex';
+                           accordionIconsOpen[index].style.display = 'none'
+                       } else {
+                           // If the accordion is closed, open it
+                           accordionContents.forEach((accordionContent) => {
+                               accordionContent.style.display = 'none'; //Hides all accordion contents
+                           });
+
+                           accordionIconsClosed.forEach((accordionIcon) => {
+                               accordionIcon.style.display = 'flex'; // Resets all icon transforms to 0deg (default)
+                           });
+
+                           accordionIconsOpen.forEach((accordionIcon) => {
+                             accordionIcon.style.display = 'none';
+                           })
+
+                           accordionContents[index].style.display = 'flex'; // Shows accordion content
+                           accordionIconsClosed[index].style.display = 'none'; // Rotates accordion icon 180deg
+                           accordionIconsOpen[index].style.display = 'flex';
+                       }
+                   });
+               });
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      data-section-id="navbar"
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+  </body>
+</html>

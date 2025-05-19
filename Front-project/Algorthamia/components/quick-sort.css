@@ -1,0 +1,28 @@
+.quick-sort-feature-card {
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  max-width: var(--dl-size-size-maxwidth);
+  box-shadow: 5px 5px 10px 0px rgba(18, 18, 18, 0.1);
+  transition: 0.3s;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.quick-sort-feature-card:hover {
+  transform: scale(1.02);
+}
+.quick-sort-text {
+  color: #fdfdfd;
+  width: 140px;
+  margin-bottom: 10px;
+}
+.quick-sort-image {
+  width: 144px;
+  height: 97px;
+  object-fit: cover;
+}
+
+
+
+
